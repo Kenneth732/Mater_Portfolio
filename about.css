@@ -1,0 +1,99 @@
+/* Mission Section */
+.mission-section {
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 40px 24px;
+    background: rgba(25, 25, 35, 0.9);
+    border: 1px solid rgba(30, 64, 175, 0.4);
+    border-radius: 10px;
+  }
+  
+  .mission-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  .mission-content p {
+    color: #f3f4f6;
+    font-size: 0.875rem;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  
+  /* Hobbies Section */
+  .hobbies-section {
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 40px 24px;
+    background: rgba(30, 30, 45, 0.9);
+    border: 1px solid rgba(30, 64, 175, 0.4);
+    border-radius: 10px;
+  }
+  
+  .hobbies-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  .hobbies-content p {
+    color: #f3f4f6;
+    font-size: 0.875rem;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 40px 24px;
+    background: rgba(34, 34, 43, 0.9);
+    border: 1px solid rgba(30, 64, 175, 0.4);
+    border-radius: 10px;
+  }
+  
+  .testimonials-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+  }
+  
+  .testimonial {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+    color: #f3f4f6;
+    font-size: 0.875rem;
+  }
+  
+  .testimonial span {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.75rem;
+    color: #d1d5db;
+  }
+  
