@@ -2,482 +2,1187 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
-    <script
-        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-    <link rel="stylesheet" href="./static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <a class="brand-logo" href="/">
-                <img class="brand-logo__icon" src="https://www.adeolaadeoti.site/svg/adeola-logo-left.svg"
-                    alt="adeola logo icon">
-                <span class="brand-logo__text-wrapper">
-                    <img class="brand-logo__text" src="https://www.adeolaadeoti.site/svg/adeola-logo-right.svg"
-                        alt="adeola logo text">
-                </span>
+
+  <header class="elite-header">
+    <nav class="elite-nav">
+      <!-- Logo with elegant hover effects -->
+      <a class="elite-brand" href="/">
+        <div class="elite-logo-icon">
+          <img src="https://www.adeolaadeoti.site/svg/adeola-logo-left.svg" alt="Logo icon">
+        </div>
+        <div class="elite-logo-text">
+          <img src="https://www.adeolaadeoti.site/svg/adeola-logo-right.svg" alt="Brand name">
+        </div>
+      </a>
+
+      <!-- Mobile menu toggle with animated hamburger -->
+      <div class="elite-menu-toggle" id="eliteToggle">
+        <div class="elite-hamburger">
+          <span class="elite-line elite-line-1"></span>
+          <span class="elite-line elite-line-2"></span>
+          <span class="elite-line elite-line-3"></span>
+        </div>
+      </div>
+
+      <!-- Navigation links with elegant hover effects -->
+      <ul class="elite-nav-links" id="eliteNavLinks">
+        <li class="elite-nav-item">
+          <a href="index.html" class="elite-link">
+            <span class="elite-link-text">Home</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+        <li class="elite-nav-item">
+          <a href="about.html" class="elite-link">
+            <span class="elite-link-text">About</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+        <li class="elite-nav-item">
+          <a href="services.html" class="elite-link">
+            <span class="elite-link-text">Services</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+        <li class="elite-nav-item">
+          <a href="portfolio.html" class="elite-link">
+            <span class="elite-link-text">Portfolio</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+        <li class="elite-nav-item">
+          <a href="contact.html" class="elite-link elite-cta">
+            <span class="elite-link-text">Contact</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="luxury-hero" id="hero">
+    <div class="luxury-container">
+      <!-- Decorative Elements -->
+      <!-- <div class="luxury-decoration luxury-diamond-1"></div> -->
+      <div class="luxury-decoration luxury-line-1"></div>
+      <div class="luxury-decoration luxury-circle-1"></div>
+      <div class="luxury-decoration luxury-circle-2"></div>
+      <div class="luxury-decoration luxury-circle-3"></div>
+
+      <!-- Main Content Grid -->
+      <div class="luxury-hero-grid">
+        <!-- Content Column -->
+        <div class="luxury-hero-content">
+          <div class="luxury-content-inner">
+            <div class="luxury-header-wrapper">
+              <h1 class="luxury-headline">
+                <span class="luxury-headline-word luxury-word-1">Crafting</span>
+                <span class="luxury-headline-word luxury-word-2">Digital</span>
+                <span class="luxury-headline-word luxury-word-3">Masterpieces</span>
+              </h1>
+              <div class="luxury-title-decoration"></div>
+            </div>
+
+            <p class="luxury-subtext">
+              DreamCraft Studios orchestrates premium digital experiences where cutting-edge
+              technology meets unparalleled design sophistication. We architect transformative
+              solutions for discerning clients who demand excellence.
+            </p>
+
+            <div class="luxury-cta-group">
+              <a href="#contact" class="luxury-cta luxury-cta-primary">
+                <span>Begin Your Project</span>
+                <div class="luxury-cta-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </div>
+              </a>
+              <a href="#projects" class="luxury-cta luxury-cta-secondary">
+                <span>View Our Portfolio</span>
+              </a>
+            </div>
+
+            <!-- Premium Trust Indicators -->
+            <div class="luxury-trust-indicators">
+              <div class="luxury-trust-item">
+                <div class="luxury-trust-number">5+</div>
+                <div class="luxury-trust-label">Years of Excellence</div>
+              </div>
+              <div class="luxury-trust-item">
+                <div class="luxury-trust-number">50+</div>
+                <div class="luxury-trust-label">Elite Clients</div>
+              </div>
+              <div class="luxury-trust-item">
+                <div class="luxury-trust-number">24</div>
+                <div class="luxury-trust-label">Industry Awards</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Column -->
+        <div class="luxury-hero-visual">
+          <div class="luxury-image-container">
+            <div class="luxury-image-wrapper">
+              <img src="./static/img/pro (1).png" alt="DreamCraft Studios team" class="luxury-main-image">
+              <div class="luxury-image-overlay"></div>
+              <div class="luxury-image-frame"></div>
+            </div>
+
+            <!-- Floating Tech Badge -->
+            <div class="luxury-tech-badge">
+              <div class="luxury-badge-content">
+                <img src="./static/img/JavaScript-logo.png" alt="JavaScript" class="luxury-tech-icon">
+                <span>Primary Stack</span>
+              </div>
+              <div class="luxury-badge-ornament"></div>
+            </div>
+          </div>
+
+          <!-- Premium Tech Stack -->
+          <div class="luxury-tech-stack">
+            <div class="luxury-tech-item">
+              <div class="luxury-tech-icon-container">
+                <img src="./static/img/django-badge.png" alt="Django">
+              </div>
+              <span class="luxury-tech-label">Backend</span>
+            </div>
+            <div class="luxury-tech-item">
+              <div class="luxury-tech-icon-container">
+                <img src="./static/img/rails.png" alt="Ruby on Rails">
+              </div>
+              <span class="luxury-tech-label">Framework</span>
+            </div>
+            <div class="luxury-tech-item">
+              <div class="luxury-tech-icon-container">
+                <img src="./static/img/13841574.png" alt="React">
+              </div>
+              <span class="luxury-tech-label">Frontend</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="elite-about-section" id="about">
+    <div class="elite-container">
+      <!-- Animated Decorative Elements -->
+      <div class="elite-decoration elite-diamond-1"></div>
+      <div class="elite-decoration elite-diamond-2"></div>
+      <div class="elite-decoration elite-circle-1"></div>
+      <div class="elite-decoration elite-line-1"></div>
+
+      <!-- Section Header with Animated Title -->
+      <div class="elite-section-header">
+        <div class="elite-section-title-wrapper">
+          <h4 class="elite-section-title">
+            <span class="elite-title-word elite-word-1">About</span>
+            <span class="elite-title-word elite-word-2">Me</span>
+          </h4>
+          <!-- <div class="elite-title-decoration"></div> -->
+        </div>
+        <div class="elite-section-subtitle">
+          <span>Professional Journey</span>
+          <div class="elite-subtitle-line"></div>
+        </div>
+      </div>
+
+      <!-- Main Content Grid -->
+      <div class="elite-about-grid">
+        <!-- Premium Image Container -->
+        <div class="elite-image-container">
+          <div class="elite-image-wrapper">
+            <img src="./static/img/pro (1).png" class="elite-about-image" alt="Professional portrait">
+            <div class="elite-image-overlay"></div>
+            <div class="elite-image-frame"></div>
+          </div>
+
+          <!-- Animated Tech Badge -->
+          <div class="elite-tech-badge">
+            <div class="elite-badge-inner">
+              <div class="elite-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                  <polyline points="13 2 13 9 20 9"></polyline>
+                </svg>
+              </div>
+              <div class="elite-badge-content">
+                <span class="elite-badge-title">Full-Stack</span>
+                <span class="elite-badge-subtitle">Developer</span>
+              </div>
+            </div>
+            <div class="elite-badge-ornament"></div>
+          </div>
+
+          <!-- Experience Indicator -->
+          <div class="elite-experience-indicator">
+            <div class="elite-experience-progress">
+              <div class="elite-progress-bar"></div>
+            </div>
+            <span class="elite-experience-text">5+ Years Experience</span>
+          </div>
+        </div>
+
+        <!-- Premium Content Area -->
+        <div class="elite-about-content">
+          <div class="elite-content-inner">
+            <p class="elite-about-text elite-text-1">
+              I'm a passionate software engineer with expertise in full-stack development, specializing in creating
+              elegant, high-performance digital experiences. My approach combines technical precision with creative
+              vision to deliver solutions that exceed expectations.
+            </p>
+
+            <!-- Animated Divider -->
+            <div class="elite-divider">
+              <div class="elite-divider-ornament">
+                <svg viewBox="0 0 100 10" preserveAspectRatio="none">
+                  <path d="M0,5 L100,5" stroke="currentColor" stroke-width="1"></path>
+                  <circle cx="50" cy="5" r="3" fill="currentColor"></circle>
+                </svg>
+              </div>
+            </div>
+
+            <p class="elite-about-text elite-text-2">
+              Beyond coding, I'm deeply invested in emerging technologies like AI/ML, blockchain, and cloud
+              architecture. I thrive on complex challenges that push boundaries, whether architecting scalable backend
+              systems or crafting pixel-perfect UIs with cutting-edge frontend technologies.
+            </p>
+
+            <!-- Skills Tags -->
+            <div class="elite-skills-tags">
+              <span class="elite-skill-tag">JavaScript/TypeScript</span>
+              <span class="elite-skill-tag">React/Vue</span>
+              <span class="elite-skill-tag">Node.js</span>
+              <span class="elite-skill-tag">Python</span>
+              <span class="elite-skill-tag">Cloud Architecture</span>
+              <span class="elite-skill-tag">UI/UX Design</span>
+            </div>
+          </div>
+
+          <!-- Signature & CTA -->
+          <div class="elite-signature-cta">
+            <div class="elite-signature">
+              <img src="https://www.adeolaadeoti.site/svg/signature.svg" alt="Signature">
+            </div>
+            <a href="#contact" class="elite-cta-button">
+              <span>Let's Collaborate</span>
+              <div class="elite-cta-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </div>
             </a>
-
-            <div class="toggle-button-wrapper">
-                <button class="toggle-button" id="toggleMenu">
-                    <svg width="57" height="20" viewBox="0 0 26 20" style="width: 57px; height: 20px;">
-                        <path fill="transparent" stroke-width="1.5" stroke="#c4c4c4" d="M 2 2.5 L 57 2.5"></path>
-                        <path fill="transparent" stroke-width="1.5" stroke="#c4c4c4" d="M 2 9.423 L 57 9.423"></path>
-                        <path fill="transparent" stroke-width="1.5" stroke="#c4c4c4" d="M 2 16.346 L 27 16.346"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="container">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h2>Creating Inspiring Digital Experiences</h2>
-                    <p>
-                        At DreamCraft Studios, we specialize in crafting innovative digital solutions that elevate your
-                        brand and engage your audience. Our passion for technology and design drives us to build
-                        user-centric websites and applications that not only look great but also provide seamless
-                        functionality. Let us help you turn your vision into reality!
-                    </p>
-                </div>
-
-
-                <div class="hero-img">
-                    <div>
-                        <div class="tech-icon">
-                            <img src="./static/img/JavaScript-logo.png" alt="Tech Icon 1">
-                        </div>
-                        <img src="./hero.png"
-                            alt="Main Hero Image">
-                    </div>
-                    <div>
-                        <div class="tech-icon">
-                            <img src="./static/img/django-badge.png" alt="Tech Icon 2">
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./static/img/rails.png" alt="Tech Icon 3">
-                        </div>
-                        <div class="tech-icon">
-                            <img src="./static/img/13841574.png" alt="Tech Icon 4">
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </section>
 
+  <!-- skills -->
 
+  <section class="elite-skills-section" id="skills">
+    <div class="elite-container">
+      <!-- Decorative Elements -->
+      <div class="elite-decoration elite-diamond-3"></div>
+      <div class="elite-decoration elite-circle-2"></div>
+      <div class="elite-decoration elite-line-2"></div>
 
-    <section class="container about-section" id="about">
-        <h4 class="about-title">About me</h4>
-
-        <div class="about-grid">
-            <img src="https://i.pinimg.com/736x/a4/1b/48/a41b48051dc7bc32b8686260cc0fb4da.jpg"
-                class="about-image" alt="About me image">
-            <div class="about-content">
-                <p>
-                    I'm a passionate software engineer with a strong focus on full-stack development. With experience
-                    across various programming languages and frameworks, I specialize in building responsive and
-                    efficient web applications. My journey into the tech world started with curiosity about how
-                    technology impacts our lives, and it quickly turned into a full-fledged career that allows me to
-                    blend creativity and logic every day.
-                </p>
-                <br>
-                <p>
-                    When I'm not coding, you'll find me exploring the latest advancements in AI, machine learning, and
-                    cloud technologies. I love taking on challenging projects that push my boundaries and allow me to
-                    learn something new. Whether it's backend development, frontend innovation, or integrating machine
-                    learning models into applications, I'm always up for the challenge.
-                </p>
-            </div>
+      <!-- Section Header -->
+      <div class="elite-section-header">
+        <div class="elite-section-title-wrapper">
+          <h4 class="elite-section-title">
+            <span class="elite-title-word elite-word-1">Technical</span>
+            <span class="elite-title-word elite-word-2">Mastery</span>
+          </h4>
+          <div class="elite-title-decoration"></div>
         </div>
-    </section>
+        <div class="elite-section-subtitle">
+          <span>Professional Expertise</span>
+          <div class="elite-subtitle-line"></div>
+        </div>
+      </div>
 
-
-    <div class="container" id="skills">
-        <section class="skills-section">
-            <h2 class="skills-title">Skills</h2>
-
-            <div class="skills-grid">
-                <!-- Frontend Development -->
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <h3 class="skill-title">Frontend Development</h3>
-                        <!-- Icon: Code -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="skill-icon" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16 18l-4-4m0 0l-4-4m4 4h8m-8 0H4" />
-                        </svg>
-                    </div>
-                    <p class="skill-description">
-                        Expertise in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js to create
-                        dynamic user interfaces.
-                    </p>
-                </article>
-
-                <!-- Backend Development -->
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <h3 class="skill-title">Backend Development</h3>
-                        <!-- Icon: Server -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="skill-icon" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5 12h14M5 12a1 1 0 010-2h14a1 1 0 010 2M5 12v8m14-8v8M9 16h6" />
-                        </svg>
-                    </div>
-                    <p class="skill-description">
-                        Skilled in server-side development using Node.js, Django, and Ruby on Rails with expertise in
-                        RESTful APIs and database management.
-                    </p>
-                </article>
-
-                <!-- DevOps -->
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <h3 class="skill-title">DevOps</h3>
-                        <!-- Icon: Settings -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="skill-icon" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9.75 4.25v-2A8.008 8.008 0 002.75 7.75h2A6.007 6.007 0 019.75 2.25v2h4.5v-2A8.008 8.008 0 0022.25 7.75h2a8.008 8.008 0 00-7.75-5.5v2h-4.5v-2A8.008 8.008 0 002.75 7.75h2A6.007 6.007 0 019.75 2.25v2h4.5zM2.75 16.25h-2a8.008 8.008 0 007.75 5.5v-2a6.007 6.007 0 01-5.75-3.5v-2H2.75v2h-2zM9.75 19.75v2a8.008 8.008 0 007.75-5.5h-2a6.007 6.007 0 01-5.75 3.5v2zM21.25 9.75h2a8.008 8.008 0 00-7.75-5.5v2h4.5v-2a6.007 6.007 0 015.75 3.5v2z" />
-                        </svg>
-                    </div>
-                    <p class="skill-description">
-                        Proficient in CI/CD pipelines, containerization with Docker, Kubernetes, and cloud services such
-                        as AWS, GCP, and Azure.
-                    </p>
-                </article>
-
-                <!-- UI/UX Design -->
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <h3 class="skill-title">UI/UX Design</h3>
-                        <!-- Icon: Pencil (Design) -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="skill-icon" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15.232 5.232l3.536 3.536m-1.768-4.904a2.25 2.25 0 113.182 3.182L10.5 17.5 6 18.5l1-4.5 9.768-9.768z" />
-                        </svg>
-                    </div>
-                    <p class="skill-description">
-                        Specializing in creating intuitive, user-centered designs with wireframing, prototyping, and
-                        design tools like Figma and Adobe XD.
-                    </p>
-                </article>
-
-                <!-- Database Management -->
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <h3 class="skill-title">Database Management</h3>
-                        <!-- Icon: Database -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="skill-icon" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6v12m16-12v12M4 6c0-1.105.895-2 2-2h12c1.105 0 2 .895 2 2M4 6v12m16-12v12M6 20h12c1.105 0 2-.895 2-2M6 4h12c1.105 0 2 .895 2 2M4 18v0m16 0v0" />
-                        </svg>
-                    </div>
-                    <p class="skill-description">
-                        Extensive experience with relational and NoSQL databases, including PostgreSQL, MySQL, MongoDB,
-                        and database optimization.
-                    </p>
-                </article>
-
-                <!-- Machine Learning -->
-                <article class="skill-card">
-                    <div class="skill-header">
-                        <h3 class="skill-title">Machine Learning</h3>
-                        <!-- Icon: Brain -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="skill-icon" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 2c-1.104 0-2 .896-2 2h-1c-1.104 0-2 .896-2 2H6c-1.105 0-2 .895-2 2h16c0-1.105-.895-2-2-2h-1c0-1.104-.896-2-2-2h-1c0-1.104-.896-2-2-2zm-1 10v8c0 .555.447 1 1 1s1-.445 1-1v-8c0-.555-.447-1-1-1s-1 .445-1 1zm3 0v8c0 .555.447 1 1 1s1-.445 1-1v-8c0-.555-.447-1-1-1s-1 .445-1 1zM9 12v8c0 .555.447 1 1 1s1-.445 1-1v-8c0-.555-.447-1-1-1s-1 .445-1 1zm-3 0v8c0 .555.447 1 1 1s1-.445 1-1v-8c0-.555-.447-1-1-1s-1 .445-1 1z" />
-                        </svg>
-                    </div>
-                    <p class="skill-description">
-                        Practical knowledge in implementing machine learning algorithms, including supervised and
-                        unsupervised learning with TensorFlow and scikit-learn.
-                    </p>
-                </article>
+      <!-- Skills Grid -->
+      <div class="elite-skills-grid">
+        <!-- Skill Card 1 -->
+        <div class="elite-skill-card">
+          <div class="elite-skill-card-inner">
+            <div class="elite-skill-header">
+              <div class="elite-skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="elite-skill-title">Frontend Engineering</h3>
             </div>
-        </section>
+            <div class="elite-skill-content">
+              <p class="elite-skill-description">
+                Architecting pixel-perfect interfaces with React, Vue, and modern CSS. Specializing in performance
+                optimization and responsive design.
+              </p>
+              <div class="elite-skill-tech">
+                <span>React</span>
+                <span>Vue</span>
+                <span>TypeScript</span>
+                <span>Tailwind</span>
+              </div>
+            </div>
+            <div class="elite-skill-ornament"></div>
+          </div>
+          <div class="elite-skill-glow"></div>
+        </div>
+
+        <!-- Skill Card 2 -->
+        <div class="elite-skill-card">
+          <div class="elite-skill-card-inner">
+            <div class="elite-skill-header">
+              <div class="elite-skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="elite-skill-title">Backend Systems</h3>
+            </div>
+            <div class="elite-skill-content">
+              <p class="elite-skill-description">
+                Building scalable microservices and APIs with Node.js, Python, and Go. Expertise in database
+                architecture and cloud integration.
+              </p>
+              <div class="elite-skill-tech">
+                <span>Node.js</span>
+                <span>Python</span>
+                <span>PostgreSQL</span>
+                <span>GraphQL</span>
+              </div>
+            </div>
+            <div class="elite-skill-ornament"></div>
+          </div>
+          <div class="elite-skill-glow"></div>
+        </div>
+
+        <!-- Skill Card 3 -->
+        <div class="elite-skill-card">
+          <div class="elite-skill-card-inner">
+            <div class="elite-skill-header">
+              <div class="elite-skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="elite-skill-title">Cloud Architecture</h3>
+            </div>
+            <div class="elite-skill-content">
+              <p class="elite-skill-description">
+                Designing and implementing cloud-native solutions with AWS, GCP, and Kubernetes. CI/CD pipelines and
+                infrastructure as code.
+              </p>
+              <div class="elite-skill-tech">
+                <span>AWS</span>
+                <span>Kubernetes</span>
+                <span>Terraform</span>
+                <span>Docker</span>
+              </div>
+            </div>
+            <div class="elite-skill-ornament"></div>
+          </div>
+          <div class="elite-skill-glow"></div>
+        </div>
+
+        <!-- Skill Card 4 -->
+        <div class="elite-skill-card">
+          <div class="elite-skill-card-inner">
+            <div class="elite-skill-header">
+              <div class="elite-skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="elite-skill-title">UI/UX Design</h3>
+            </div>
+            <div class="elite-skill-content">
+              <p class="elite-skill-description">
+                Crafting intuitive user experiences with a focus on accessibility and conversion. Wireframing to
+                high-fidelity prototypes.
+              </p>
+              <div class="elite-skill-tech">
+                <span>Figma</span>
+                <span>Adobe XD</span>
+                <span>Framer</span>
+                <span>Webflow</span>
+              </div>
+            </div>
+            <div class="elite-skill-ornament"></div>
+          </div>
+          <div class="elite-skill-glow"></div>
+        </div>
+
+        <!-- Skill Card 5 -->
+        <div class="elite-skill-card">
+          <div class="elite-skill-card-inner">
+            <div class="elite-skill-header">
+              <div class="elite-skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="elite-skill-title">Database Systems</h3>
+            </div>
+            <div class="elite-skill-content">
+              <p class="elite-skill-description">
+                Optimizing data storage and retrieval with both SQL and NoSQL solutions. Performance tuning and data
+                modeling expertise.
+              </p>
+              <div class="elite-skill-tech">
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+                <span>Redis</span>
+                <span>Firestore</span>
+              </div>
+            </div>
+            <div class="elite-skill-ornament"></div>
+          </div>
+          <div class="elite-skill-glow"></div>
+        </div>
+
+        <!-- Skill Card 6 -->
+        <div class="elite-skill-card">
+          <div class="elite-skill-card-inner">
+            <div class="elite-skill-header">
+              <div class="elite-skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="elite-skill-title">AI/ML Integration</h3>
+            </div>
+            <div class="elite-skill-content">
+              <p class="elite-skill-description">
+                Implementing machine learning models and AI solutions for predictive analytics and intelligent
+                applications.
+              </p>
+              <div class="elite-skill-tech">
+                <span>TensorFlow</span>
+                <span>PyTorch</span>
+                <span>NLP</span>
+                <span>Computer Vision</span>
+              </div>
+            </div>
+            <div class="elite-skill-ornament"></div>
+          </div>
+          <div class="elite-skill-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- service -->
+
+  <section class="elite-services" id="services">
+    <!-- Decorative Elements -->
+    <div class="elite-decoration elite-diamond-3"></div>
+    <div class="elite-decoration elite-circle-2"></div>
+    <div class="elite-decoration elite-line-2"></div>
+
+    <!-- Section Header -->
+    <div class="elite-section-header">
+      <div class="elite-section-title-wrapper">
+        <h4 class="elite-section-title">
+          <span class="elite-title-word elite-word-1">Premium</span>
+          <span class="elite-title-word elite-word-2">Services</span>
+        </h4>
+      </div>
+      <div class="elite-section-subtitle">
+        <span>Excellence Delivered</span>
+        <div class="elite-subtitle-line"></div>
+      </div>
     </div>
 
-
-    <section class="container projects-section" id="projects">
-        <h4 class="projects-title">Our Projects</h4>
-        <div class="projects-intro">
-            <p>
-                Here’s a selection of some recent work. From e-commerce platforms to machine learning-driven analytics,
-                we strive to deliver solutions that enhance our clients' businesses. Explore our projects categorized by
-                type and functionality.
-            </p>
+    <!-- Services Grid -->
+    <div class="elite-services-grid">
+      <!-- Service Card 1 -->
+      <div class="elite-service-card">
+        <div class="elite-service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
         </div>
-
-        <!-- Filter Buttons -->
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web Development</button>
-            <button class="filter-btn" data-filter="app">Mobile Apps</button>
-            <button class="filter-btn" data-filter="ai">AI & Analytics</button>
-        </div>
-
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-item" data-category="web">
-                <img src="./static/img/e-commerce.png" alt="E-Commerce Platform" class="project-image">
-                <div class="project-content">
-                    <h5 class="project-title">E-Commerce Platform</h5>
-                    <p class="project-description">
-                        A comprehensive e-commerce platform designed for both buyers and sellers, built with React and
-                        Python-Flask. It features an intuitive user interface that adapts to different devices, offering
-                        a seamless shopping experience. The platform integrates secure payment gateways and robust user
-                        authentication, ensuring that transactions are safe and efficient.
-                    </p>
-                    <ul class="project-details">
-                        <li><strong>Technologies:</strong> React, Flask, PostgreSQL</li>
-                        <li><strong>Features:</strong> Payment Integration, User Authentication, Responsive Design,
-                            Product Search, and Filtering</li>
-                    </ul>
-                    <a href="https://github.com/Kenneth12222/shoppify_blue_print" class="project-link">View Details</a>
-                    <a href="https://shoppify-50wt.onrender.com/" class="project-demo">Live Demo</a>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-item" data-category="app">
-                <img src="./static/img/pet.png" alt="Pet Store" class="project-image">
-                <div class="project-content">
-                    <h5 class="project-title">Pet Store</h5>
-                    <p class="project-description">
-                        A sleek and modern web application for pet enthusiasts to find, adopt, and buy pets. This
-                        platform utilizes React for a dynamic user experience and Firebase for real-time data
-                        management. The integration of Google Maps API allows users to locate nearby pet shelters and
-                        stores, enhancing user convenience and engagement.
-                    </p>
-                    <ul class="project-details">
-                        <li><strong>Technologies:</strong> React.js, Firebase, Google Maps API</li>
-                        <li><strong>Features:</strong> Real-Time Tracking, In-App Notifications, Pet Adoption Listings
-                        </li>
-                    </ul>
-                    <a href="https://github.com/Kenneth12222/pet-shop" class="project-link">View Details</a>
-                    <a href="https://pet-shop-gilt.vercel.app/" class="project-demo">Live Demo</a>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-item" data-category="ai">
-                <img src="./static/img/tween.png" alt="AI Analytics Dashboard" class="project-image">
-                <div class="project-content">
-                    <h5 class="project-title">Digital Agency</h5>
-                    <p class="project-description">
-                        A powerful AI analytics dashboard that provides businesses with real-time insights and
-                        predictive analytics. Built with Python, TensorFlow, and React, this application leverages
-                        machine learning algorithms to optimize business performance, helping users make informed
-                        decisions based on data trends and visualizations.
-                    </p>
-                    <ul class="project-details">
-                        <li><strong>Technologies:</strong> Python, TensorFlow, React</li>
-                        <li><strong>Features:</strong> Predictive Analytics, Data Visualization, User-Friendly Dashboard
-                        </li>
-                    </ul>
-                    <a href="https://github.com/Kenneth12222/Digital_Agency" class="project-link">View Details</a>
-                    <a href="https://digital-agency-wine.vercel.app/" class="project-demo">Live Demo</a>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-item" data-category="web">
-                <img src="./static/img/pexels.png" alt="Pexels Web Application" class="project-image">
-                <div class="project-content">
-                    <h5 class="project-title">Pexels</h5>
-                    <p class="project-description">
-                        A visually striking web application that provides users with access to high-quality stock photos
-                        and videos. Built with HTML, CSS, and JavaScript, this application features a responsive design
-                        and animation effects that enhance user interaction. Users can easily search and filter content,
-                        making it perfect for designers and content creators.
-                    </p>
-                    <ul class="project-details">
-                        <li><strong>Technologies:</strong> HTML, CSS, JavaScript</li>
-                        <li><strong>Features:</strong> Responsive Design, Animation Effects, Advanced Search and
-                            Filtering</li>
-                    </ul>
-                    <a href="https://github.com/Kenneth12222/Pexels" class="project-link">View Details</a>
-                    <a href="https://pexels-pink.vercel.app/" class="project-demo">Live Demo</a>
-                </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="project-item" data-category="web">
-                <img src="./static/img/cineflix.png" alt="CineFlix Movie Website" class="project-image">
-                <div class="project-content">
-                    <h5 class="project-title">CineFlix</h5>
-                    <p class="project-description">
-                        A visually striking movie streaming platform that allows users to discover and watch a vast
-                        array of films. Built with React.js and Django, this website features a modern interface with
-                        smooth navigation, animation effects, and personalized recommendations based on user
-                        preferences. It aims to enhance the movie-watching experience by offering easy access to the
-                        latest films and user reviews.
-                    </p>
-                    <ul class="project-details">
-                        <li><strong>Technologies:</strong> React.js, CSS, Render, Django</li>
-                        <li><strong>Features:</strong> Responsive Design, Animation Effects, User Reviews and Ratings
-                        </li>
-                    </ul>
-                    <a href="https://github.com/Kenneth12222/CineFlicks" class="project-link">View Details</a>
-                    <a href="https://cine-flicks-five.vercel.app/" class="project-demo">Live Demo</a>
-                </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="project-item" data-category="web">
-                <img src="./static/img/blog.png" alt="Daily Blog" class="project-image">
-                <div class="project-content">
-                    <h5 class="project-title">Daily Blog</h5>
-                    <p class="project-description">
-                        A captivating blogging platform that allows users to share their thoughts and experiences with
-                        the world. Built with React, CSS, and JavaScript, this application features a clean and modern
-                        design, responsive layout, and engaging animation effects. Users can create, edit, and comment
-                        on posts, fostering a vibrant community of writers and readers.
-                    </p>
-                    <ul class="project-details">
-                        <li><strong>Technologies:</strong> React, CSS, JavaScript</li>
-                        <li><strong>Features:</strong> Responsive Design, Animation Effects, Post Creation and Editing
-                        </li>
-                    </ul>
-                    <a href="https://github.com/Kenneth12222/CineFlicks" class="project-link">View Details</a>
-                    <a href="https://cine-flicks-five.vercel.app/" class="project-demo">Live Demo</a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-
-    <section class="container contact-section" id="contact">
-        <h4 class="contact-title">Get in Touch</h4>
-        <p class="contact-description">
-            We would love to hear from you! Whether you have a question about our services, projects, pricing, or
-            anything else, <br> our team is ready to answer all your questions.
+        <h3 class="elite-service-title">Web Development</h3>
+        <p class="elite-service-description">
+          Bespoke, high-performance web applications built with cutting-edge technologies like React, Next.js, and
+          Node.js.
         </p>
+        <div class="elite-service-cta">
+          <a href="#" class="elite-cta-link">
+            <span>Explore</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="elite-service-highlight"></div>
+      </div>
 
-        <div class="contact-content">
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <form action="#" method="POST" class="form">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Enter your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required placeholder="Enter your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Subject of your inquiry">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5" required
-                            placeholder="Type your message here"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn-submit">Send Message</button>
-                    </div>
-                </form>
+      <!-- Service Card 2 -->
+      <div class="elite-service-card">
+        <div class="elite-service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+            <path d="M8 21h8"></path>
+            <path d="M12 17v4"></path>
+          </svg>
+        </div>
+        <h3 class="elite-service-title">UI/UX Design</h3>
+        <p class="elite-service-description">
+          Stunning, user-centric interfaces crafted with Figma & Adobe XD, optimized for engagement and conversions.
+        </p>
+        <div class="elite-service-cta">
+          <a href="#" class="elite-cta-link">
+            <span>Explore</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="elite-service-highlight"></div>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="elite-service-card">
+        <div class="elite-service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M4 9h16"></path>
+            <path d="M4 15h16"></path>
+            <path d="M10 3L8 21"></path>
+            <path d="M16 3l-2 18"></path>
+          </svg>
+        </div>
+        <h3 class="elite-service-title">Cloud Solutions</h3>
+        <p class="elite-service-description">
+          Scalable cloud architecture with AWS, Azure, and GCP for seamless performance and security.
+        </p>
+        <div class="elite-service-cta">
+          <a href="#" class="elite-cta-link">
+            <span>Explore</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="elite-service-highlight"></div>
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+
+  <section class="eluxe-projects" id="projects" data-scroll-section>
+    <!-- Diamond Particle Background -->
+    <div class="eluxe-projects-bg">
+      <div class="eluxe-diamond-particle eluxe-dp-1"></div>
+      <div class="eluxe-diamond-particle eluxe-dp-2"></div>
+      <div class="eluxe-diamond-particle eluxe-dp-3"></div>
+      <div class="eluxe-diamond-particle eluxe-dp-4"></div>
+    </div>
+    
+    <!-- Platinum Mesh Overlay -->
+    <div class="eluxe-platinum-mesh"></div>
+    
+    <!-- Gold Accent Elements -->
+    <div class="eluxe-gold-accents">
+      <div class="eluxe-gold-line eluxe-gl-1"></div>
+      <div class="eluxe-gold-line eluxe-gl-2"></div>
+    </div>
+  
+    <div class="eluxe-container">
+      <!-- Luxury Section Header -->
+      <div class="eluxe-header" data-scroll data-scroll-offset="200">
+        <div class="eluxe-title-wrapper">
+          <h2 class="eluxe-title">
+            <span class="eluxe-title-line" data-scroll data-scroll-delay="0.1" data-scroll-speed="1">
+              <span class="eluxe-title-inner">Signature</span>
+            </span>
+            <span class="eluxe-title-line" data-scroll data-scroll-delay="0.2" data-scroll-speed="1.2">
+              <span class="eluxe-title-inner">Creations</span>
+            </span>
+          </h2>
+          <div class="eluxe-title-ornament">
+            <svg viewBox="0 0 120 8" preserveAspectRatio="none">
+              <path d="M0,4 C30,8 90,0 120,4 L120,8 L0,8 Z" fill="url(#eluxe-ornament-gradient)"/>
+            </svg>
+          </div>
+        </div>
+        <p class="eluxe-subtitle" data-scroll data-scroll-delay="0.3">Bespoke Digital Masterpieces</p>
+      </div>
+  
+      <!-- Luxury Filter Buttons -->
+      <div class="eluxe-filter" data-scroll data-scroll-delay="0.4">
+        <button class="eluxe-filter-btn active" data-filter="all">
+          <span class="eluxe-filter-orb"></span>
+          <span class="eluxe-filter-text">All Collections</span>
+        </button>
+        <button class="eluxe-filter-btn" data-filter="web">
+          <span class="eluxe-filter-orb"></span>
+          <span class="eluxe-filter-text">Web Experiences</span>
+        </button>
+        <button class="eluxe-filter-btn" data-filter="app">
+          <span class="eluxe-filter-orb"></span>
+          <span class="eluxe-filter-text">Mobile Ateliers</span>
+        </button>
+        <button class="eluxe-filter-btn" data-filter="ai">
+          <span class="eluxe-filter-orb"></span>
+          <span class="eluxe-filter-text">AI Innovations</span>
+        </button>
+      </div>
+  
+      <!-- Luxury Projects Grid -->
+      <div class="eluxe-projects-grid">
+        <!-- Project 1 -->
+        <div class="eluxe-project" data-category="web" data-scroll data-scroll-offset="10%">
+          <div class="eluxe-project-number">01</div>
+          <div class="eluxe-project-media">
+            <div class="eluxe-project-image" style="background-image: url('./static/img/pix.png')"></div>
+            <div class="eluxe-project-overlay"></div>
+            <div class="eluxe-project-reflection"></div>
+          </div>
+          <div class="eluxe-project-content">
+            <h3 class="eluxe-project-title">Pixplore Marketing AI</h3>
+            <div class="eluxe-project-tech">
+              <span class="eluxe-tech-item">React</span>
+              <span class="eluxe-tech-item">Flask</span>
+              <span class="eluxe-tech-item">PostgreSQL</span>
+            </div>
+            <p class="eluxe-project-description">
+              An exclusive AI marketing concierge service that anticipates client needs before they arise, delivering hyper-personalized experiences.
+            </p>
+            <div class="eluxe-project-actions">
+              <a href="https://github.com/Kenneth12222/shoppify_blue_print" class="eluxe-project-link">
+                <span class="eluxe-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.2 3.2 0 00-.9-2.5c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0020 4.8 5 5 0 0020 1s-1.3-.3-4 1.5a13.4 13.4 0 00-7 0C6.3.7 5 1 5 1a5 5 0 000 3.8 5.4 5.4 0 001.6 3.9c0 5.5 3.3 6.6 6.4 7a3.2 3.2 0 00.9 2.5V21"/>
+                  </svg>
+                </span>
+                <span>Source Code</span>
+              </a>
+              <a href="https://shoppify-50wt.onrender.com/" class="eluxe-project-link">
+                <span class="eluxe-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6m4-3h6v6m-11 5L21 3"/>
+                  </svg>
+                </span>
+                <span>Live Preview</span>
+              </a>
+            </div>
+          </div>
+          <div class="eluxe-project-border"></div>
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="eluxe-project" data-category="web" data-scroll data-scroll-offset="10%" data-scroll-delay="0.1">
+          <div class="eluxe-project-number">02</div>
+          <div class="eluxe-project-media">
+            <div class="eluxe-project-image" style="background-image: url('./static/img/plore.png')"></div>
+            <div class="eluxe-project-overlay"></div>
+            <div class="eluxe-project-reflection"></div>
+          </div>
+          <div class="eluxe-project-content">
+            <h3 class="eluxe-project-title">Pixplore Platform</h3>
+            <div class="eluxe-project-tech">
+              <span class="eluxe-tech-item">Jinja2</span>
+              <span class="eluxe-tech-item">Flask</span>
+              <span class="eluxe-tech-item">PostgreSQL</span>
+            </div>
+            <p class="eluxe-project-description">
+              A premium AI image generation suite offering unparalleled creative control and artistic refinement for discerning clients.
+            </p>
+            <div class="eluxe-project-actions">
+              <a href="https://github.com/Kenneth12222/shoppify_blue_print" class="eluxe-project-link">
+                <span class="eluxe-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.2 3.2 0 00-.9-2.5c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0020 4.8 5 5 0 0020 1s-1.3-.3-4 1.5a13.4 13.4 0 00-7 0C6.3.7 5 1 5 1a5 5 0 000 3.8 5.4 5.4 0 001.6 3.9c0 5.5 3.3 6.6 6.4 7a3.2 3.2 0 00.9 2.5V21"/>
+                  </svg>
+                </span>
+                <span>Source Code</span>
+              </a>
+              <a href="https://shoppify-50wt.onrender.com/" class="eluxe-project-link">
+                <span class="eluxe-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6m4-3h6v6m-11 5L21 3"/>
+                  </svg>
+                </span>
+                <span>Live Preview</span>
+              </a>
+            </div>
+          </div>
+          <div class="eluxe-project-border"></div>
+        </div>
+  
+        <!-- Project 3 -->
+        <div class="eluxe-project" data-category="web" data-scroll data-scroll-offset="10%" data-scroll-delay="0.2">
+          <div class="eluxe-project-number">03</div>
+          <div class="eluxe-project-media">
+            <div class="eluxe-project-image" style="background-image: url('./static/img/eco.png')"></div>
+            <div class="eluxe-project-overlay"></div>
+            <div class="eluxe-project-reflection"></div>
+          </div>
+          <div class="eluxe-project-content">
+            <h3 class="eluxe-project-title">GiBird</h3>
+            <div class="eluxe-project-tech">
+              <span class="eluxe-tech-item">React</span>
+              <span class="eluxe-tech-item">Flask</span>
+              <span class="eluxe-tech-item">PostgreSQL</span>
+            </div>
+            <p class="eluxe-project-description">
+              A luxury e-commerce destination offering white-glove service and exclusive member benefits for the most discerning shoppers.
+            </p>
+            <div class="eluxe-project-actions">
+              <a href="https://github.com/Kenneth12222/shoppify_blue_print" class="eluxe-project-link">
+                <span class="eluxe-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.2 3.2 0 00-.9-2.5c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0020 4.8 5 5 0 0020 1s-1.3-.3-4 1.5a13.4 13.4 0 00-7 0C6.3.7 5 1 5 1a5 5 0 000 3.8 5.4 5.4 0 001.6 3.9c0 5.5 3.3 6.6 6.4 7a3.2 3.2 0 00.9 2.5V21"/>
+                  </svg>
+                </span>
+                <span>Source Code</span>
+              </a>
+              <a href="https://shoppify-50wt.onrender.com/" class="eluxe-project-link">
+                <span class="eluxe-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6m4-3h6v6m-11 5L21 3"/>
+                  </svg>
+                </span>
+                <span>Live Preview</span>
+              </a>
+            </div>
+          </div>
+          <div class="eluxe-project-border"></div>
+        </div>
+  
+        <!-- Project 4 -->
+        <div class="eluxe-project" data-category="web" data-scroll data-scroll-offset="10%" data-scroll-delay="0.3">
+          <div class="eluxe-project-number">04</div>
+          <div class="eluxe-project-media">
+            <div class="eluxe-project-image" style="background-image: url('./static/img/e-commerce.png')"></div>
+            <div class="eluxe-project-overlay"></div>
+            <div class="eluxe-project-reflection"></div>
+          </div>
+          <div class="eluxe-project-content">
+            <h3 class="eluxe-project-title">Shoppify</h3>
+            <div class="eluxe-project-tech">
+              <span class="eluxe-tech-item">Jinja2</span>
+              <span class="eluxe-tech-item">Flask</span>
+              <span class="eluxe-tech-item">PostgreSQL</span>
+            </div>
+            <p class="eluxe-project-description">
+              A high-end retail platform featuring personalized shopping assistants and augmented reality previews for luxury goods.
+            </p>
+            <div class="eluxe-project-actions">
+              <a href="https://github.com/Kenneth12222/shoppify_blue_print" class="eluxe-project-link">
+                <span class="eluxe-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.2 3.2 0 00-.9-2.5c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0020 4.8 5 5 0 0020 1s-1.3-.3-4 1.5a13.4 13.4 0 00-7 0C6.3.7 5 1 5 1a5 5 0 000 3.8 5.4 5.4 0 001.6 3.9c0 5.5 3.3 6.6 6.4 7a3.2 3.2 0 00.9 2.5V21"/>
+                  </svg>
+                </span>
+                <span>Source Code</span>
+              </a>
+              <a href="https://shoppify-50wt.onrender.com/" class="eluxe-project-link">
+                <span class="eluxe-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6m4-3h6v6m-11 5L21 3"/>
+                  </svg>
+                </span>
+                <span>Live Preview</span>
+              </a>
+            </div>
+          </div>
+          <div class="eluxe-project-border"></div>
+        </div>
+  
+        <!-- Project 5 -->
+        <div class="eluxe-project" data-category="app" data-scroll data-scroll-offset="10%" data-scroll-delay="0.4">
+          <div class="eluxe-project-number">05</div>
+          <div class="eluxe-project-media">
+            <div class="eluxe-project-image" style="background-image: url('./static/img/pet.png')"></div>
+            <div class="eluxe-project-overlay"></div>
+            <div class="eluxe-project-reflection"></div>
+          </div>
+          <div class="eluxe-project-content">
+            <h3 class="eluxe-project-title">Zoopticon</h3>
+            <div class="eluxe-project-tech">
+              <span class="eluxe-tech-item">React.js</span>
+              <span class="eluxe-tech-item">Firebase</span>
+              <span class="eluxe-tech-item">Google Maps API</span>
+            </div>
+            <p class="eluxe-project-description">
+              An exclusive pet adoption concierge service matching premium companions with their ideal luxury homes.
+            </p>
+            <div class="eluxe-project-actions">
+              <a href="https://github.com/Kenneth12222/pet-shop" class="eluxe-project-link">
+                <span class="eluxe-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.2 3.2 0 00-.9-2.5c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0020 4.8 5 5 0 0020 1s-1.3-.3-4 1.5a13.4 13.4 0 00-7 0C6.3.7 5 1 5 1a5 5 0 000 3.8 5.4 5.4 0 001.6 3.9c0 5.5 3.3 6.6 6.4 7a3.2 3.2 0 00.9 2.5V21"/>
+                  </svg>
+                </span>
+                <span>Source Code</span>
+              </a>
+              <a href="https://pet-shop-gilt.vercel.app/" class="eluxe-project-link">
+                <span class="eluxe-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6m4-3h6v6m-11 5L21 3"/>
+                  </svg>
+                </span>
+                <span>Live Preview</span>
+              </a>
+            </div>
+          </div>
+          <div class="eluxe-project-border"></div>
+        </div>
+  
+        <!-- Project 6 -->
+        <div class="eluxe-project" data-category="ai" data-scroll data-scroll-offset="10%" data-scroll-delay="0.5">
+          <div class="eluxe-project-number">06</div>
+          <div class="eluxe-project-media">
+            <div class="eluxe-project-image" style="background-image: url('./static/img/tween.png')"></div>
+            <div class="eluxe-project-overlay"></div>
+            <div class="eluxe-project-reflection"></div>
+          </div>
+          <div class="eluxe-project-content">
+            <h3 class="eluxe-project-title">OmniMind Analytics</h3>
+            <div class="eluxe-project-tech">
+              <span class="eluxe-tech-item">Python</span>
+              <span class="eluxe-tech-item">TensorFlow</span>
+              <span class="eluxe-tech-item">React</span>
+            </div>
+            <p class="eluxe-project-description">
+              A premium AI analytics dashboard providing exclusive market insights and predictive intelligence for elite clients.
+            </p>
+            <div class="eluxe-project-actions">
+              <a href="https://github.com/Kenneth12222/Digital_Agency" class="eluxe-project-link">
+                <span class="eluxe-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.2 3.2 0 00-.9-2.5c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0020 4.8 5 5 0 0020 1s-1.3-.3-4 1.5a13.4 13.4 0 00-7 0C6.3.7 5 1 5 1a5 5 0 000 3.8 5.4 5.4 0 001.6 3.9c0 5.5 3.3 6.6 6.4 7a3.2 3.2 0 00.9 2.5V21"/>
+                  </svg>
+                </span>
+                <span>Source Code</span>
+              </a>
+              <a href="https://digital-agency-wine.vercel.app/" class="eluxe-project-link">
+                <span class="eluxe-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6m4-3h6v6m-11 5L21 3"/>
+                  </svg>
+                </span>
+                <span>Live Preview</span>
+              </a>
+            </div>
+          </div>
+          <div class="eluxe-project-border"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!--  -->
+  <section class="quantum-contact-section" id="contact">
+    <!-- Quantum Energy Network -->
+    <div class="q-energy-network">
+      <div class="qen-node node-1"></div>
+      <div class="qen-node node-2"></div>
+      <div class="qen-node node-3"></div>
+      <div class="qen-connection"></div>
+    </div>
+
+    <!-- Floating Quantum Orbs -->
+    <div class="quantum-orb q-orb-1"></div>
+    <div class="quantum-orb q-orb-2"></div>
+
+    <div class="quantum-container">
+      <!-- Diamond-Enhanced Header -->
+      <div class="diamond-contact-header">
+        <div class="dch-shard shard-1"></div>
+        <div class="dch-shard shard-2"></div>
+        <h2 class="quantum-contact-title">
+          <span class="qct-word">Quantum</span>
+          <span class="qct-word">Connection</span>
+        </h2>
+        <div class="qct-underline">
+          <div class="qct-underline-glow"></div>
+        </div>
+        <p class="quantum-contact-subtitle">Secure Direct Channel to Our Executive Team</p>
+      </div>
+
+      <!-- Quantum Communication Grid -->
+      <div class="quantum-com-grid">
+        <!-- Quantum Transmission Form -->
+        <div class="quantum-transmission-form">
+          <div class="qtf-hologram"></div>
+          <form class="qt-form">
+            <div class="qtf-group">
+              <div class="qtf-input-hologram"></div>
+              <label>Your Identity</label>
+              <input type="text" class="qtf-input" placeholder="Enter your full name" required>
+              <div class="qtf-input-aura"></div>
+            </div>
+            <div class="qtf-group">
+              <div class="qtf-input-hologram"></div>
+              <label>Quantum Signature</label>
+              <input type="email" class="qtf-input" placeholder="Your secure email" required>
+              <div class="qtf-input-aura"></div>
+            </div>
+            <div class="qtf-group">
+              <div class="qtf-input-hologram"></div>
+              <label>Communication Vector</label>
+              <select class="qtf-input">
+                <option value="">Select priority level</option>
+                <option value="1">Standard Encryption</option>
+                <option value="2">Executive Priority</option>
+                <option value="3">Quantum Urgent</option>
+              </select>
+              <div class="qtf-input-aura"></div>
+            </div>
+            <div class="qtf-group">
+              <div class="qtf-input-hologram"></div>
+              <label>Message Protocol</label>
+              <textarea class="qtf-input" rows="5" placeholder="Encode your message" required></textarea>
+              <div class="qtf-input-aura"></div>
+            </div>
+            <button type="submit" class="quantum-submit-btn">
+              <span>Initiate Transmission</span>
+              <div class="qsb-pulse"></div>
+            </button>
+          </form>
+        </div>
+
+        <!-- Quantum Access Hub -->
+        <div class="quantum-access-hub">
+          <div class="qah-hologram"></div>
+          <div class="qah-content">
+            <h3 class="qah-title">Secure Access Nodes</h3>
+            <div class="qah-divider">
+              <div class="qah-divider-sparkle"></div>
             </div>
 
-            <!-- Contact Details -->
-            <div class="contact-details">
-                <h5>Contact Information</h5>
-                <ul class="contact-info-list">
-                    <li><i class="fas fa-phone"></i> +254 742-164-615</li>
-                    <li><i class="fas fa-envelope"></i>kennethmburu21@gmail.com</li>
-                    <li><i class="fas fa-map-marker-alt"></i> 123 Business Street, New York, NY 10001</li>
-                </ul>
-                <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.712926156425!2d-74.00601528510455!3d40.712775979328824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3169f87693%3A0xfb9f4e003db10f77!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1625643132143!5m2!1sen!2sus"
-                        width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
+            <div class="qah-nodes">
+              <!-- Node 1 -->
+              <div class="qah-node">
+                <div class="qah-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
                 </div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer class="footer-section">
-        <div class="container footer-content">
-            <div class="footer-links">
-                <h5 class="footer-title">Quick Links</h5>
-                <ul class="footer-nav">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-about">
-                <h5 class="footer-title">About Us</h5>
-                <p>DreamCraft Studios is dedicated to building innovative solutions that empower businesses and
-                    individuals alike. Our team of experts is here to support your journey.</p>
-            </div>
-
-            <div class="footer-contact">
-                <h5 class="footer-title">Contact Us</h5>
-                <p>Address: 123 Tech Avenue, Silicon Valley, CA</p>
-                <p><a href="mailto:kennethmburu21@gmail.com">kennethmburu21@gmail.com</a></p>
-                <p><a href="tel:+2540742164615">+254 742-164-615</a></p>
-            </div>
-
-            <div class="footer-newsletter">
-                <h5 class="footer-title">Subscribe to Our Newsletter</h5>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-
-            <div class="footer-socials">
-                <h5 class="footer-title">Follow Us</h5>
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <div class="qah-node-info">
+                  <h4>Quantum Voice Channel</h4>
+                  <p>+254 742-164-615</p>
+                  <div class="qah-node-status">
+                    <div class="qah-status-dot"></div>
+                    <span>Encrypted Line</span>
+                  </div>
                 </div>
+              </div>
+
+              <!-- Node 2 -->
+              <div class="qah-node">
+                <div class="qah-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div class="qah-node-info">
+                  <h4>Secure Data Packet</h4>
+                  <p>kennethmburu21@gmail.com</p>
+                  <div class="qah-node-status">
+                    <div class="qah-status-dot"></div>
+                    <span>256-bit Encryption</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Node 3 -->
+              <div class="qah-node">
+                <div class="qah-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div class="qah-node-info">
+                  <h4>Spatial Coordinates</h4>
+                  <p>123 Business Street, New York</p>
+                  <div class="qah-node-status">
+                    <div class="qah-status-dot"></div>
+                    <span>5D Waypoint</span>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- Quantum Spatial Map -->
+            <div class="quantum-spatial-map">
+              <div class="qsm-hologram"></div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.712926156425!2d-74.00601528510455!3d40.712775979328824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3169f87693%3A0xfb9f4e003db10f77!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1625643132143!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy" class="qsm-iframe"></iframe>
+              <div class="qsm-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="cosmic-footer">
+    <!-- Cosmic Background Elements -->
+    <div class="stellar-particle-field"></div>
+    <div class="nebula-overlay"></div>
+
+    <div class="cosmic-container">
+      <!-- Quantum Grid Layout -->
+      <div class="quantum-grid">
+        <!-- About Nebula -->
+        <div class="c-column">
+          <h5 class="column-title">
+            <span class="title-ornament">⌬</span> Stellar Origins
+          </h5>
+          <p class="column-text">
+            Forged in the heart of a dying star, our digital creations transcend space and time.
+            We craft experiences that bend reality.
+          </p>
+          <div class="quantum-signature">
+            <span class="signature-line"></span>
+            <span class="signature-text">Beyond Imagination</span>
+            <span class="signature-line"></span>
+          </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Your DreamCraft Studios. All Rights Reserved.</p>
+        <!-- Navigation Constellation -->
+        <div class="c-column">
+          <h5 class="column-title">
+            <span class="title-ornament">✧</span> Cosmic Pathways
+          </h5>
+          <ul class="stellar-links">
+            <li><a href="#home" class="stellar-link">Home Singularity</a></li>
+            <li><a href="#projects" class="stellar-link">Project Nebulas</a></li>
+            <li><a href="#skills" class="stellar-link">Skill Constellations</a></li>
+            <li><a href="#contact" class="stellar-link">Transmission Hub</a></li>
+          </ul>
         </div>
-    </footer>
-    <script src="./static/js/app.js"></script>
+
+        <!-- Quantum Contacts -->
+        <div class="c-column">
+          <h5 class="column-title">
+            <span class="title-ornament">⚛</span> Entanglement Links
+          </h5>
+          <div class="quantum-contacts">
+            <a href="mailto:contact@celestial.dev" class="quantum-contact">
+              <span class="contact-orb"></span>
+              <span>contact@celestial.dev</span>
+            </a>
+            <a href="tel:+1234567890" class="quantum-contact">
+              <span class="contact-orb"></span>
+              <span>+1 (234) 567-890</span>
+            </a>
+            <div class="quantum-contact">
+              <span class="contact-orb"></span>
+              <span>Andromeda Galaxy, Sector X-42</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stellar Networks -->
+        <div class="c-column">
+          <h5 class="column-title">
+            <span class="title-ornament">✺</span> Wormhole Networks
+          </h5>
+          <div class="stellar-social">
+            <a href="#" class="social-orb">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-orb">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="social-orb">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-orb">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+          <div class="quantum-transmission">
+            <p>Initiate direct quantum entanglement:</p>
+            <button class="transmission-btn">
+              <span class="btn-orb"></span>
+              <span>Emergency Beam</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Celestial Copyright -->
+      <div class="celestial-copyright">
+        <div class="copyright-divider"></div>
+        <p class="copyright-text">
+          <span class="copyright-ornament">⚡</span>
+          © 3023 Celestial Designs. All realities reserved.
+          <span class="copyright-ornament">⚡</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./static/js/app.js"></script>
 </body>
 
 </html>

@@ -1,101 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./static/css/style.css">
-    <link rel="stylesheet" href="./services.css">
-</head>
-<body>
-    <header class="header">
-        <nav>
-            <a class="brand-logo" href="/">
-              <img class="brand-logo__icon" src="https://www.adeolaadeoti.site/svg/adeola-logo-left.svg" alt="adeola logo icon">
-              <span class="brand-logo__text-wrapper">
-                <img class="brand-logo__text" src="https://www.adeolaadeoti.site/svg/adeola-logo-right.svg" alt="adeola logo text">
-              </span>
-            </a>
-          
-            <div class="toggle-button-wrapper">
-              <button class="toggle-button" id="toggleMenu">
-                <svg width="57" height="20" viewBox="0 0 26 20" style="width: 57px; height: 20px;">
-                  <path fill="transparent" stroke-width="1.5" stroke="#c4c4c4" d="M 2 2.5 L 57 2.5"></path>
-                  <path fill="transparent" stroke-width="1.5" stroke="#c4c4c4" d="M 2 9.423 L 57 9.423"></path>
-                  <path fill="transparent" stroke-width="1.5" stroke="#c4c4c4" d="M 2 16.346 L 27 16.346"></path>
-                </svg>
-              </button>
-            </div>
-          
-            <ul class="nav-links" id="navLinks">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-    </header>
 
-    <section class="container services-section" id="services">
-        <h4 class="services-title">Our Services</h4>
-        <div class="services-intro">
-            <p>
-                At [Your Company Name], we offer a wide range of services designed to help businesses thrive in the digital world. Whether you're a startup looking for a stunning new website or an established company seeking to optimize your digital presence, we have the skills and experience to make it happen. Our goal is to deliver customized solutions that drive results and ensure your business stands out from the competition.
-            </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="stylesheet" href="./services.css">
+</head>
+
+<body>
+
+
+  <header class="elite-header">
+    <nav class="elite-nav">
+      <!-- Logo with elegant hover effects -->
+      <a class="elite-brand" href="/">
+        <div class="elite-logo-icon">
+          <img src="https://www.adeolaadeoti.site/svg/adeola-logo-left.svg" alt="Logo icon">
         </div>
-    
-        <div class="services-grid">
-            <div class="service-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbp8aoDngrX8S7hUlDkwHfz-qIfeS_KmkJkw&s" alt="Web Development Image" class="service-image">
-                <h5 class="service-title">Web Development</h5>
-                <p>
-                    We build responsive, high-performing websites and web applications tailored to your specific needs. From e-commerce platforms to business websites, we create solutions that are both functional and visually appealing.
-                </p>
-            </div>
-    
-            <div class="service-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFwIGhzU4jos_SzGVL04_44XGuAX7HPo0EAw&s" alt="UI/UX Design Image" class="service-image">
-                <h5 class="service-title">UI/UX Design</h5>
-                <p>
-                    Our design team crafts intuitive and user-friendly interfaces that enhance user engagement and improve overall experience. We ensure your digital products are as beautiful as they are effective.
-                </p>
-            </div>
-    
-            <div class="service-item">
-                <img src="https://media7o.sedmiodjel.com/blog/aws-cloud-value-framework/aws-cloud-value-framework-cover.jpg" alt="Cloud Solutions Image" class="service-image">
-                <h5 class="service-title">Cloud Solutions</h5>
-                <p>
-                    We specialize in cloud-based solutions, helping businesses scale their operations efficiently. From cloud migration to building cloud-native applications, we ensure your infrastructure is secure, scalable, and optimized for performance.
-                </p>
-            </div>
-    
-            <div class="service-item">
-                <img src="https://media.excellentwebworld.com/wp-content/uploads/2024/05/29055450/api-integration-work.webp" alt="API Development Image" class="service-image">
-                <h5 class="service-title">API Development & Integration</h5>
-                <p>
-                    Seamlessly connect your applications with custom APIs or third-party services. We build and integrate APIs to extend the functionality of your software and ensure smooth communication between systems.
-                </p>
-            </div>
-    
-            <div class="service-item">
-                <img src="https://datagr8.com/cdn/shop/articles/DALL_E_2024-03-28_11.42.41_-_An_engaging_and_illustrative_image_depicting_The_Benefits_of_Robust_Cybersecurity_._The_image_should_feature_a_central_motif_of_a_shield_encompassing.webp?v=1711618980" alt="Security Image" class="service-image">
-                <h5 class="service-title">Security & Compliance</h5>
-                <p>
-                    Safeguard your business with our robust security solutions. We implement best practices in cybersecurity and ensure your systems meet industry standards for compliance and data protection.
-                </p>
-            </div>
-    
-            <div class="service-item">
-                <img src="https://miro.medium.com/v2/resize:fit:748/1*e1eIYbFWP51a9X7DxISG7g.png" alt="Data Analytics Image" class="service-image">
-                <h5 class="service-title">Data Analytics & Machine Learning</h5>
-                <p>
-                    Unlock valuable insights with our data analytics and machine learning services. We help businesses leverage their data to make informed decisions, optimize performance, and predict future trends.
-                </p>
-            </div>
+        <div class="elite-logo-text">
+          <img src="https://www.adeolaadeoti.site/svg/adeola-logo-right.svg" alt="Brand name">
         </div>
-    </section>
+      </a>
+
+      <!-- Mobile menu toggle with animated hamburger -->
+      <div class="elite-menu-toggle" id="eliteToggle">
+        <div class="elite-hamburger">
+          <span class="elite-line elite-line-1"></span>
+          <span class="elite-line elite-line-2"></span>
+          <span class="elite-line elite-line-3"></span>
+        </div>
+      </div>
+
+      <!-- Navigation links with elegant hover effects -->
+      <ul class="elite-nav-links" id="eliteNavLinks">
+        <li class="elite-nav-item">
+          <a href="index.html" class="elite-link">
+            <span class="elite-link-text">Home</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+        <li class="elite-nav-item">
+          <a href="about.html" class="elite-link">
+            <span class="elite-link-text">About</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+        <li class="elite-nav-item">
+          <a href="services.html" class="elite-link">
+            <span class="elite-link-text">Services</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+        <li class="elite-nav-item">
+          <a href="portfolio.html" class="elite-link">
+            <span class="elite-link-text">Portfolio</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+        <li class="elite-nav-item">
+          <a href="contact.html" class="elite-link elite-cta">
+            <span class="elite-link-text">Contact</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="eluxe-services" id="services" data-scroll-section>
+    <!-- Diamond Particle Background -->
+    <div class="eluxe-services-bg">
+      <div class="eluxe-diamond-particle eluxe-dp-1"></div>
+      <div class="eluxe-diamond-particle eluxe-dp-2"></div>
+      <div class="eluxe-diamond-particle eluxe-dp-3"></div>
+      <div class="eluxe-diamond-particle eluxe-dp-4"></div>
+    </div>
     
-    <script src="./static/js/app.js"></script>
+    <!-- Platinum Mesh Overlay -->
+    <div class="eluxe-platinum-mesh"></div>
+    
+    <div class="eluxe-container">
+      <!-- Luxury Section Header -->
+      <div class="eluxe-header" data-scroll data-scroll-offset="200">
+        <div class="eluxe-title-wrapper">
+          <h2 class="eluxe-title">
+            <span class="eluxe-title-line" data-scroll data-scroll-delay="0.1" data-scroll-speed="1">
+              <span class="eluxe-title-inner">Our Exclusive</span>
+            </span>
+            <span class="eluxe-title-line" data-scroll data-scroll-delay="0.2" data-scroll-speed="1.2">
+              <span class="eluxe-title-inner">Services</span>
+            </span>
+          </h2>
+          <div class="eluxe-title-ornament">
+            <svg viewBox="0 0 120 8" preserveAspectRatio="none">
+              <path d="M0,4 C30,8 90,0 120,4 L120,8 L0,8 Z" fill="url(#eluxe-ornament-gradient)"/>
+            </svg>
+          </div>
+        </div>
+        <p class="eluxe-subtitle" data-scroll data-scroll-delay="0.3">Bespoke Digital Solutions</p>
+      </div>
+  
+      <!-- Luxury Intro Text -->
+      <div class="eluxe-services-intro" data-scroll data-scroll-delay="0.4">
+        <p>
+          At <span class="eluxe-gold-text">[Your Company Name]</span>, we craft exclusive digital experiences for discerning clients. Our concierge-level services are meticulously designed to elevate elite brands in the digital landscape. From avant-garde web architectures to secure cloud fortresses, we deliver nothing less than excellence tailored to your exacting standards.
+        </p>
+      </div>
+  
+      <!-- Premium Services Grid -->
+      <div class="eluxe-services-grid">
+        <!-- Service 1 -->
+        <div class="eluxe-service-card" data-scroll data-scroll-offset="10%">
+          <div class="eluxe-service-glow"></div>
+          <div class="eluxe-service-number">01</div>
+          <div class="eluxe-service-platinum-border"></div>
+          <div class="eluxe-service-media">
+            <div class="eluxe-service-image" style="background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')"></div>
+            <div class="eluxe-service-overlay"></div>
+          </div>
+          <div class="eluxe-service-content">
+            <div class="eluxe-service-icon">
+              <svg viewBox="0 0 64 64">
+                <path d="M32 2L2 22l30 20 30-20L32 2z" vector-effect="non-scaling-stroke"/>
+                <path d="M2 22v20l30 20 30-20V22" vector-effect="non-scaling-stroke"/>
+              </svg>
+            </div>
+            <h3>Web Architecture</h3>
+            <p>We engineer responsive digital estates with precision-crafted code and avant-garde designs. Our bespoke web solutions combine performance with uncompromising aesthetics.</p>
+            <div class="eluxe-service-cta">
+              <span>Explore Service</span>
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service 2 -->
+        <div class="eluxe-service-card" data-scroll data-scroll-offset="10%" data-scroll-delay="0.1">
+          <div class="eluxe-service-glow"></div>
+          <div class="eluxe-service-number">02</div>
+          <div class="eluxe-service-platinum-border"></div>
+          <div class="eluxe-service-media">
+            <div class="eluxe-service-image" style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80')"></div>
+            <div class="eluxe-service-overlay"></div>
+          </div>
+          <div class="eluxe-service-content">
+            <div class="eluxe-service-icon">
+              <svg viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="24" vector-effect="non-scaling-stroke"/>
+                <path d="M32 16v16l12 8" vector-effect="non-scaling-stroke"/>
+              </svg>
+            </div>
+            <h3>Experience Design</h3>
+            <p>Our design artisans craft intuitive interfaces that captivate and convert. Every interaction is meticulously planned to create seamless, memorable journeys.</p>
+            <div class="eluxe-service-cta">
+              <span>Explore Service</span>
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service 3 -->
+        <div class="eluxe-service-card" data-scroll data-scroll-offset="10%" data-scroll-delay="0.2">
+          <div class="eluxe-service-glow"></div>
+          <div class="eluxe-service-number">03</div>
+          <div class="eluxe-service-platinum-border"></div>
+          <div class="eluxe-service-media">
+            <div class="eluxe-service-image" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80')"></div>
+            <div class="eluxe-service-overlay"></div>
+          </div>
+          <div class="eluxe-service-content">
+            <div class="eluxe-service-icon">
+              <svg viewBox="0 0 64 64">
+                <path d="M8 8h48v48H8z"/>
+                <path d="M20 20h24v24H20z"/>
+              </svg>
+            </div>
+            <h3>Cloud Infrastructure</h3>
+            <p>We architect secure, scalable cloud fortresses that grow with your ambitions. Our solutions ensure enterprise-grade reliability with elite performance.</p>
+            <div class="eluxe-service-cta">
+              <span>Explore Service</span>
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service 4 -->
+        <div class="eluxe-service-card" data-scroll data-scroll-offset="10%" data-scroll-delay="0.3">
+          <div class="eluxe-service-glow"></div>
+          <div class="eluxe-service-number">04</div>
+          <div class="eluxe-service-platinum-border"></div>
+          <div class="eluxe-service-media">
+            <div class="eluxe-service-image" style="background-image: url('https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')"></div>
+            <div class="eluxe-service-overlay"></div>
+          </div>
+          <div class="eluxe-service-content">
+            <div class="eluxe-service-icon">
+              <svg viewBox="0 0 64 64">
+                <circle cx="32" cy="24" r="8"/>
+                <path d="M56 40V16a8 8 0 0 0-8-8H16a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h32a8 8 0 0 0 8-8v-8z"/>
+              </svg>
+            </div>
+            <h3>API Concierge</h3>
+            <p>Our integration specialists create seamless connections between your digital ecosystem components, ensuring flawless data flow and functionality.</p>
+            <div class="eluxe-service-cta">
+              <span>Explore Service</span>
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service 5 -->
+        <div class="eluxe-service-card" data-scroll data-scroll-offset="10%" data-scroll-delay="0.4">
+          <div class="eluxe-service-glow"></div>
+          <div class="eluxe-service-number">05</div>
+          <div class="eluxe-service-platinum-border"></div>
+          <div class="eluxe-service-media">
+            <div class="eluxe-service-image" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')"></div>
+            <div class="eluxe-service-overlay"></div>
+          </div>
+          <div class="eluxe-service-content">
+            <div class="eluxe-service-icon">
+              <svg viewBox="0 0 64 64">
+                <path d="M32 2L2 22l30 20 30-20L32 2z" vector-effect="non-scaling-stroke"/>
+                <path d="M2 22v20l30 20 30-20V22" vector-effect="non-scaling-stroke"/>
+              </svg>
+            </div>
+            <h3>Cyber Fortress</h3>
+            <p>We implement military-grade security protocols to safeguard your digital assets, ensuring compliance with the most stringent industry standards.</p>
+            <div class="eluxe-service-cta">
+              <span>Explore Service</span>
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service 6 -->
+        <div class="eluxe-service-card" data-scroll data-scroll-offset="10%" data-scroll-delay="0.5">
+          <div class="eluxe-service-glow"></div>
+          <div class="eluxe-service-number">06</div>
+          <div class="eluxe-service-platinum-border"></div>
+          <div class="eluxe-service-media">
+            <div class="eluxe-service-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')"></div>
+            <div class="eluxe-service-overlay"></div>
+          </div>
+          <div class="eluxe-service-content">
+            <div class="eluxe-service-icon">
+              <svg viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="24" vector-effect="non-scaling-stroke"/>
+                <path d="M32 16v16l12 8" vector-effect="non-scaling-stroke"/>
+              </svg>
+            </div>
+            <h3>Data Intelligence</h3>
+            <p>Our analytics maestros transform raw data into strategic assets, employing advanced machine learning to uncover insights and predict trends.</p>
+            <div class="eluxe-service-cta">
+              <span>Explore Service</span>
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="./static/js/app.js"></script>
 </body>
+
 </html>

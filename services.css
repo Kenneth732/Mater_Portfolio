@@ -1,84 +1,421 @@
-/* Services Section */
-.services-section {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 60px 24px;
-    background: rgba(34, 34, 43, 0.9);
-    border: 1px solid rgba(30, 64, 175, 0.4);
-    border-radius: 10px;
+:root {
+  --eluxe-primary: #6bc5f8;
+  --eluxe-primary-dark: #3a8db8;
+  --eluxe-secondary: #a162e8;
+  --eluxe-gold: #D4AF37;
+  --eluxe-platinum: #E5E4E2;
+  --eluxe-silver: #C0C0C0;
+  --eluxe-diamond: #B9F2FF;
+  --eluxe-dark: #0a0a0f;
+  --eluxe-dark-light: #14141f;
+  --eluxe-gray: rgba(255, 255, 255, 0.7);
+  --eluxe-light: #ffffff;
+  
+  --eluxe-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --eluxe-glow: 0 0 30px rgba(107, 197, 248, 0.5);
+  --eluxe-gold-glow: 0 0 25px rgba(212, 175, 55, 0.4);
+}
+
+/* LUXURY ANIMATIONS */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(2deg); }
+}
+
+@keyframes diamondSparkle {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+@keyframes holographicPulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* SERVICES SECTION - LUXURY STYLING */
+.eluxe-services {
+  position: relative;
+  padding: 18rem 0;
+  background-color: var(--eluxe-dark);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.eluxe-services-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.eluxe-diamond-particle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, 
+    rgba(185, 242, 255, 0.8) 0%, 
+    rgba(185, 242, 255, 0.2) 100%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  filter: drop-shadow(0 0 15px rgba(185, 242, 255, 0.5));
+  animation: float 8s ease-in-out infinite, diamondSparkle 3s ease-in-out infinite;
+  z-index: -1;
+}
+
+.eluxe-dp-1 {
+  top: 15%;
+  left: 10%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.eluxe-dp-2 {
+  top: 60%;
+  left: 80%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 1s;
+}
+
+.eluxe-dp-3 {
+  top: 30%;
+  left: 70%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 2s;
+}
+
+.eluxe-dp-4 {
+  top: 75%;
+  left: 20%;
+  width: 90px;
+  height: 90px;
+  animation-delay: 3s;
+}
+
+.eluxe-platinum-mesh {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    url('https://www.transparenttextures.com/patterns/brushed-alum.png') center/cover,
+    linear-gradient(135deg, 
+      rgba(229, 228, 226, 0.03) 0%, 
+      transparent 100%);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.eluxe-services-intro {
+  max-width: 800px;
+  margin: 0 auto 8rem;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.9;
+  color: var(--eluxe-gray);
+  position: relative;
+}
+
+.eluxe-services-intro p {
+  position: relative;
+  z-index: 2;
+}
+
+.eluxe-gold-text {
+  color: var(--eluxe-gold);
+  font-weight: 500;
+}
+
+.eluxe-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 4rem;
+  max-width: 1800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.eluxe-service-card {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: var(--eluxe-transition);
+  z-index: 1;
+}
+
+.eluxe-service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.02) 0%, 
+    transparent 50%, 
+    rgba(255, 255, 255, 0.02) 100%);
+  z-index: -1;
+}
+
+.eluxe-service-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, 
+    rgba(107, 197, 248, 0.15) 0%, 
+    transparent 70%);
+  opacity: 0;
+  transition: var(--eluxe-transition);
+  z-index: -1;
+}
+
+.eluxe-service-number {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.03);
+  font-family: 'Playfair Display', serif;
+  z-index: 3;
+}
+
+.eluxe-service-platinum-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, 
+    rgba(229, 228, 226, 0.3) 0%, 
+    rgba(229, 228, 226, 0.1) 50%, 
+    rgba(229, 228, 226, 0.3) 100%) border-box;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.eluxe-service-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 
+    var(--eluxe-glow);
+}
+
+.eluxe-service-card:hover .eluxe-service-glow {
+  opacity: 1;
+}
+
+.eluxe-service-card:hover .eluxe-service-platinum-border {
+  background: linear-gradient(135deg, 
+    rgba(229, 228, 226, 0.5) 0%, 
+    rgba(229, 228, 226, 0.2) 50%, 
+    rgba(229, 228, 226, 0.5) 100%) border-box;
+}
+
+.eluxe-service-media {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.eluxe-service-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.eluxe-service-card:hover .eluxe-service-image {
+  transform: scale(1.1);
+}
+
+.eluxe-service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, 
+    rgba(10, 10, 15, 0.9) 0%, 
+    transparent 60%);
+  z-index: 1;
+}
+
+.eluxe-service-content {
+  position: relative;
+  padding: 3rem;
+  z-index: 2;
+}
+
+.eluxe-service-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 2rem;
+  color: var(--eluxe-primary);
+  transition: var(--eluxe-transition);
+}
+
+.eluxe-service-card:hover .eluxe-service-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 15px rgba(107, 197, 248, 0.5));
+}
+
+.eluxe-service-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--eluxe-light);
+  background: linear-gradient(90deg, #fff, var(--eluxe-primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.eluxe-service-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--eluxe-gray);
+  margin-bottom: 2.5rem;
+}
+
+.eluxe-service-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--eluxe-gold);
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: var(--eluxe-transition);
+}
+
+.eluxe-service-cta svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.eluxe-service-cta:hover {
+  color: var(--eluxe-light);
+}
+
+.eluxe-service-cta:hover svg {
+  transform: translateX(5px);
+}
+
+/* LUXURY TYPOGRAPHY & HEADERS */
+.eluxe-header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.eluxe-title-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.eluxe-title {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2rem;
+  color: transparent;
+  background: linear-gradient(90deg, var(--eluxe-primary), var(--eluxe-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -1px;
+}
+
+.eluxe-title-line {
+  display: block;
+  overflow: hidden;
+}
+
+.eluxe-title-inner {
+  display: inline-block;
+}
+
+.eluxe-title-ornament {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 5px;
+}
+
+.eluxe-title-ornament svg {
+  width: 100%;
+  height: 100%;
+}
+
+.eluxe-subtitle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--eluxe-gray);
+  font-weight: 300;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 1200px) {
+  .eluxe-title {
+    font-size: 5rem;
   }
   
-  .services-title {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 40px;
+  .eluxe-services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .eluxe-services {
+    padding: 12rem 0;
   }
   
-  .services-intro {
-    text-align: center;
-    margin-bottom: 40px;
+  .eluxe-title {
+    font-size: 3.5rem;
   }
   
-  .services-intro p {
-    color: #f3f4f6;
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
+  .eluxe-services-intro {
+    font-size: 1.1rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .eluxe-title {
+    font-size: 2.8rem;
   }
   
-  .services-grid {
-    display: grid;
+  .eluxe-subtitle {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+  }
+  
+  .eluxe-services-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
   }
-  
-  @media (min-width: 768px) {
-    .services-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .services-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-  
-  .service-item {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 24px;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .service-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .service-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 16px;
-  }
-  
-  .service-title {
-    font-size: 1.25rem;
-    color: #fff;
-    font-weight: 600;
-    margin-bottom: 12px;
-  }
-  
-  .service-item p {
-    font-size: 0.875rem;
-    color: #f3f4f6;
-    line-height: 1.5;
-  }
-  
+}

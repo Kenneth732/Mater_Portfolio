@@ -1,90 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./contact.css">
-    <link rel="stylesheet" href="./static/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="./static/css/style.css">
 </head>
+
 <body>
 
-    <header class="header">
-        <nav>
-            <a class="brand-logo" href="/">
-              <img class="brand-logo__icon" src="https://www.adeolaadeoti.site/svg/adeola-logo-left.svg" alt="adeola logo icon">
-              <span class="brand-logo__text-wrapper">
-                <img class="brand-logo__text" src="https://www.adeolaadeoti.site/svg/adeola-logo-right.svg" alt="adeola logo text">
-              </span>
-            </a>
-          
-            <div class="toggle-button-wrapper">
-              <button class="toggle-button" id="toggleMenu">
-                <svg width="57" height="20" viewBox="0 0 26 20" style="width: 57px; height: 20px;">
-                  <path fill="transparent" stroke-width="1.5" stroke="#c4c4c4" d="M 2 2.5 L 57 2.5"></path>
-                  <path fill="transparent" stroke-width="1.5" stroke="#c4c4c4" d="M 2 9.423 L 57 9.423"></path>
-                  <path fill="transparent" stroke-width="1.5" stroke="#c4c4c4" d="M 2 16.346 L 27 16.346"></path>
-                </svg>
-              </button>
-            </div>
-          
-            <ul class="nav-links" id="navLinks">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-    </header>
 
-    <section class="container contact-section" id="contact">
-        <h4 class="contact-title">Get in Touch</h4>
-        <p class="contact-description">
-            We would love to hear from you! Whether you have a question about our services, projects, pricing, or anything else, our team is ready to answer all your questions.
-        </p>
-    
-        <div class="contact-content">
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <form action="#" method="POST" class="form">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Enter your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required placeholder="Enter your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Subject of your inquiry">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Type your message here"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn-submit">Send Message</button>
-                    </div>
-                </form>
-            </div>
-    
-            <!-- Contact Details -->
-            <div class="contact-details">
-                <h5>Contact Information</h5>
-                <ul class="contact-info-list">
-                    <li><i class="fas fa-phone"></i> +254 742-164-615</li>
-                    <li><i class="fas fa-envelope"></i> kennethmburu21@gmail.com</li>
-                    <li><i class="fas fa-map-marker-alt"></i> 123 Business Street, New York, NY 10001</li>
-                </ul>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.712926156425!2d-74.00601528510455!3d40.712775979328824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3169f87693%3A0xfb9f4e003db10f77!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1625643132143!5m2!1sen!2sus" 
-                    width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-            </div>
+  <header class="elite-header">
+    <nav class="elite-nav">
+      <!-- Logo with elegant hover effects -->
+      <a class="elite-brand" href="/">
+        <div class="elite-logo-icon">
+          <img src="https://www.adeolaadeoti.site/svg/adeola-logo-left.svg" alt="Logo icon">
         </div>
-    </section>
-    <script src="./static/js/app.js"></script>
+        <div class="elite-logo-text">
+          <img src="https://www.adeolaadeoti.site/svg/adeola-logo-right.svg" alt="Brand name">
+        </div>
+      </a>
+
+      <!-- Mobile menu toggle with animated hamburger -->
+      <div class="elite-menu-toggle" id="eliteToggle">
+        <div class="elite-hamburger">
+          <span class="elite-line elite-line-1"></span>
+          <span class="elite-line elite-line-2"></span>
+          <span class="elite-line elite-line-3"></span>
+        </div>
+      </div>
+
+      <!-- Navigation links with elegant hover effects -->
+      <ul class="elite-nav-links" id="eliteNavLinks">
+        <li class="elite-nav-item">
+          <a href="index.html" class="elite-link">
+            <span class="elite-link-text">Home</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+        <li class="elite-nav-item">
+          <a href="about.html" class="elite-link">
+            <span class="elite-link-text">About</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+        <li class="elite-nav-item">
+          <a href="services.html" class="elite-link">
+            <span class="elite-link-text">Services</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+        <li class="elite-nav-item">
+          <a href="portfolio.html" class="elite-link">
+            <span class="elite-link-text">Portfolio</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+        <li class="elite-nav-item">
+          <a href="contact.html" class="elite-link elite-cta">
+            <span class="elite-link-text">Contact</span>
+            <span class="elite-link-underline"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <section class="quantum-contact-section" id="contact">
+    <!-- Quantum Energy Network -->
+    <div class="q-energy-network">
+      <div class="qen-node node-1"></div>
+      <div class="qen-node node-2"></div>
+      <div class="qen-node node-3"></div>
+      <div class="qen-connection"></div>
+    </div>
+
+    <!-- Floating Quantum Orbs -->
+    <div class="quantum-orb q-orb-1"></div>
+    <div class="quantum-orb q-orb-2"></div>
+
+    <div class="quantum-container">
+      <!-- Diamond-Enhanced Header -->
+      <div class="diamond-contact-header">
+        <div class="dch-shard shard-1"></div>
+        <div class="dch-shard shard-2"></div>
+        <h2 class="quantum-contact-title">
+          <span class="qct-word">Quantum</span>
+          <span class="qct-word">Connection</span>
+        </h2>
+        <div class="qct-underline">
+          <div class="qct-underline-glow"></div>
+        </div>
+        <p class="quantum-contact-subtitle">Secure Direct Channel to Our Executive Team</p>
+      </div>
+
+      <!-- Quantum Communication Grid -->
+      <div class="quantum-com-grid">
+        <!-- Quantum Transmission Form -->
+        <div class="quantum-transmission-form">
+          <div class="qtf-hologram"></div>
+          <form class="qt-form">
+            <div class="qtf-group">
+              <div class="qtf-input-hologram"></div>
+              <label>Your Identity</label>
+              <input type="text" class="qtf-input" placeholder="Enter your full name" required>
+              <div class="qtf-input-aura"></div>
+            </div>
+            <div class="qtf-group">
+              <div class="qtf-input-hologram"></div>
+              <label>Quantum Signature</label>
+              <input type="email" class="qtf-input" placeholder="Your secure email" required>
+              <div class="qtf-input-aura"></div>
+            </div>
+            <div class="qtf-group">
+              <div class="qtf-input-hologram"></div>
+              <label>Communication Vector</label>
+              <select class="qtf-input">
+                <option value="">Select priority level</option>
+                <option value="1">Standard Encryption</option>
+                <option value="2">Executive Priority</option>
+                <option value="3">Quantum Urgent</option>
+              </select>
+              <div class="qtf-input-aura"></div>
+            </div>
+            <div class="qtf-group">
+              <div class="qtf-input-hologram"></div>
+              <label>Message Protocol</label>
+              <textarea class="qtf-input" rows="5" placeholder="Encode your message" required></textarea>
+              <div class="qtf-input-aura"></div>
+            </div>
+            <button type="submit" class="quantum-submit-btn">
+              <span>Initiate Transmission</span>
+              <div class="qsb-pulse"></div>
+            </button>
+          </form>
+        </div>
+
+        <!-- Quantum Access Hub -->
+        <div class="quantum-access-hub">
+          <div class="qah-hologram"></div>
+          <div class="qah-content">
+            <h3 class="qah-title">Secure Access Nodes</h3>
+            <div class="qah-divider">
+              <div class="qah-divider-sparkle"></div>
+            </div>
+
+            <div class="qah-nodes">
+              <!-- Node 1 -->
+              <div class="qah-node">
+                <div class="qah-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div class="qah-node-info">
+                  <h4>Quantum Voice Channel</h4>
+                  <p>+254 742-164-615</p>
+                  <div class="qah-node-status">
+                    <div class="qah-status-dot"></div>
+                    <span>Encrypted Line</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Node 2 -->
+              <div class="qah-node">
+                <div class="qah-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div class="qah-node-info">
+                  <h4>Secure Data Packet</h4>
+                  <p>kennethmburu21@gmail.com</p>
+                  <div class="qah-node-status">
+                    <div class="qah-status-dot"></div>
+                    <span>256-bit Encryption</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Node 3 -->
+              <div class="qah-node">
+                <div class="qah-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div class="qah-node-info">
+                  <h4>Spatial Coordinates</h4>
+                  <p>123 Business Street, New York</p>
+                  <div class="qah-node-status">
+                    <div class="qah-status-dot"></div>
+                    <span>5D Waypoint</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quantum Spatial Map -->
+            <div class="quantum-spatial-map">
+              <div class="qsm-hologram"></div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.712926156425!2d-74.00601528510455!3d40.712775979328824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3169f87693%3A0xfb9f4e003db10f77!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1625643132143!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy" class="qsm-iframe"></iframe>
+              <div class="qsm-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="cosmic-footer">
+    <!-- Cosmic Background Elements -->
+    <div class="stellar-particle-field"></div>
+    <div class="nebula-overlay"></div>
+
+    <div class="cosmic-container">
+      <!-- Quantum Grid Layout -->
+      <div class="quantum-grid">
+        <!-- About Nebula -->
+        <div class="cosmic-column">
+          <h5 class="column-title">
+            <span class="title-ornament">⌬</span> Stellar Origins
+          </h5>
+          <p class="column-text">
+            Forged in the heart of a dying star, our digital creations transcend space and time.
+            We craft experiences that bend reality.
+          </p>
+          <div class="quantum-signature">
+            <span class="signature-line"></span>
+            <span class="signature-text">Beyond Imagination</span>
+            <span class="signature-line"></span>
+          </div>
+        </div>
+
+        <!-- Navigation Constellation -->
+        <div class="cosmic-column">
+          <h5 class="column-title">
+            <span class="title-ornament">✧</span> Cosmic Pathways
+          </h5>
+          <ul class="stellar-links">
+            <li><a href="#home" class="stellar-link">Home Singularity</a></li>
+            <li><a href="#projects" class="stellar-link">Project Nebulas</a></li>
+            <li><a href="#skills" class="stellar-link">Skill Constellations</a></li>
+            <li><a href="#contact" class="stellar-link">Transmission Hub</a></li>
+          </ul>
+        </div>
+
+        <!-- Quantum Contacts -->
+        <div class="cosmic-column">
+          <h5 class="column-title">
+            <span class="title-ornament">⚛</span> Entanglement Links
+          </h5>
+          <div class="quantum-contact">
+            <a href="mailto:contact@celestial.dev" class="quantum-contact">
+              <span class="contact-orb"></span>
+              <span>contact@celestial.dev</span>
+            </a>
+            <a href="tel:+1234567890" class="quantum-contact">
+              <span class="contact-orb"></span>
+              <span>+1 (234) 567-890</span>
+            </a>
+            <div class="quantum-contact">
+              <span class="contact-orb"></span>
+              <span>Andromeda Galaxy, Sector X-42</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stellar Networks -->
+        <div class="cosmic-column">
+          <h5 class="column-title">
+            <span class="title-ornament">✺</span> Wormhole Networks
+          </h5>
+          <div class="stellar-social">
+            <a href="#" class="social-orb">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-orb">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="social-orb">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-orb">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+          <div class="quantum-transmission">
+            <p>Initiate direct quantum entanglement:</p>
+            <button class="transmission-btn">
+              <span class="btn-orb"></span>
+              <span>Emergency Beam</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Celestial Copyright -->
+      <div class="celestial-copyright">
+        <div class="copyright-divider"></div>
+        <p class="copyright-text">
+          <span class="copyright-ornament">⚡</span>
+          © 3023 Celestial Designs. All realities reserved.
+          <span class="copyright-ornament">⚡</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./static/js/app.js"></script>
 </body>
+
 </html>

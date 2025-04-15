@@ -1,99 +1,1035 @@
-/* Mission Section */
-.mission-section {
-    max-width: 1200px;
-    width: 90%;
-    margin: 40px auto;
-    padding: 40px 24px;
-    background: rgba(25, 25, 35, 0.9);
-    border: 1px solid rgba(30, 64, 175, 0.4);
-    border-radius: 10px;
+:root {
+  --eluxe-primary: #6bc5f8;
+  --eluxe-primary-dark: #3a8db8;
+  --eluxe-secondary: #a162e8;
+  --eluxe-gold: #D4AF37;
+  --eluxe-platinum: #E5E4E2;
+  --eluxe-silver: #C0C0C0;
+  --eluxe-diamond: #B9F2FF;
+  --eluxe-dark: #0a0a0f;
+  --eluxe-dark-light: #14141f;
+  --eluxe-gray: rgba(255, 255, 255, 0.7);
+  --eluxe-light: #ffffff;
+  
+  --eluxe-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --eluxe-glow: 0 0 30px rgba(107, 197, 248, 0.5);
+  --eluxe-gold-glow: 0 0 25px rgba(212, 175, 55, 0.4);
+}
+
+/* LUXURY ANIMATIONS */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(2deg); }
+}
+
+@keyframes diamondSparkle {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+@keyframes goldParticleFlow {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
+}
+
+@keyframes holographicPulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* MISSION SECTION - LUXURY ENHANCEMENTS */
+.eluxe-mission {
+  position: relative;
+  padding: 18rem 0;
+  background-color: var(--eluxe-dark);
+  overflow: hidden;
+  z-index: 1;
+  max-width: 1800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.eluxe-parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: 
+    radial-gradient(ellipse at 75% 30%, 
+      rgba(107, 197, 248, 0.05) 0%, 
+      transparent 60%),
+    linear-gradient(15deg, 
+      rgba(10, 10, 15, 0.9) 0%, 
+      transparent 30%,
+      transparent 70%, 
+      rgba(10, 10, 15, 0.9) 100%);
+  z-index: -1;
+}
+
+.eluxe-diamond {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, 
+    rgba(185, 242, 255, 0.8) 0%, 
+    rgba(185, 242, 255, 0.2) 100%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  filter: drop-shadow(0 0 15px rgba(185, 242, 255, 0.5));
+  animation: float 8s ease-in-out infinite, diamondSparkle 3s ease-in-out infinite;
+  z-index: -1;
+}
+
+.eluxe-diamond-1 {
+  top: 15%;
+  left: 10%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.eluxe-diamond-2 {
+  top: 60%;
+  left: 80%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 1s;
+}
+
+.eluxe-diamond-3 {
+  top: 30%;
+  left: 70%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 2s;
+}
+
+.eluxe-particle-network {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.eluxe-particle-network::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: white;
+  box-shadow: 
+    60vw 10vh 1px white,
+    10vw 80vh 1px white,
+    80vw 70vh 1px var(--eluxe-primary),
+    20vw 60vh 1px var(--eluxe-secondary),
+    30vw 20vh 1px var(--eluxe-diamond),
+    70vw 40vh 1px var(--eluxe-diamond);
+  animation: particleFlow 20s linear infinite;
+}
+
+.eluxe-light-source {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, 
+    rgba(255, 255, 255, 0.8) 0%, 
+    transparent 70%);
+  filter: blur(50px);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.eluxe-gold-accents {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.eluxe-gold-line {
+  position: absolute;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--eluxe-gold) 30%, 
+    transparent 100%);
+  height: 1px;
+  opacity: 0.1;
+}
+
+.eluxe-gold-line-1 {
+  top: 30%;
+  width: 100%;
+  animation: holographicPulse 15s ease infinite;
+}
+
+.eluxe-gold-line-2 {
+  top: 70%;
+  width: 100%;
+  animation: holographicPulse 20s ease infinite reverse;
+}
+
+.eluxe-mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 5rem;
+  margin-top: 10rem;
+}
+
+.eluxe-mission-card {
+  position: relative;
+  padding: 5rem 4rem;
+  background: rgba(10, 10, 15, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 2rem;
+  backdrop-filter: blur(20px);
+  transition: var(--eluxe-transition);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.eluxe-mission-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.02) 0%, 
+    transparent 50%, 
+    rgba(255, 255, 255, 0.02) 100%);
+  z-index: -1;
+}
+
+.eluxe-mission-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, 
+    rgba(107, 197, 248, 0.15) 0%, 
+    transparent 70%);
+  opacity: 0;
+  transition: var(--eluxe-transition);
+  z-index: -1;
+}
+
+.eluxe-mission-platinum-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, 
+    rgba(229, 228, 226, 0.3) 0%, 
+    rgba(229, 228, 226, 0.1) 50%, 
+    rgba(229, 228, 226, 0.3) 100%) border-box;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.eluxe-mission-card:hover {
+  transform: translateY(-15px);
+  border-color: rgba(107, 197, 248, 0.3);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 
+    var(--eluxe-glow);
+}
+
+.eluxe-mission-card:hover .eluxe-mission-glow {
+  opacity: 1;
+}
+
+.eluxe-mission-card:hover .eluxe-mission-platinum-border {
+  background: linear-gradient(135deg, 
+    rgba(229, 228, 226, 0.5) 0%, 
+    rgba(229, 228, 226, 0.2) 50%, 
+    rgba(229, 228, 226, 0.5) 100%) border-box;
+}
+
+.eluxe-mission-number {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.03);
+  font-family: 'Playfair Display', serif;
+}
+
+.eluxe-icon-container {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 3rem;
+}
+
+.eluxe-mission-icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: var(--eluxe-primary);
+  transition: var(--eluxe-transition);
+  z-index: 2;
+}
+
+.eluxe-icon-halo {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border-radius: 50%;
+  background: radial-gradient(circle, 
+    rgba(107, 197, 248, 0.2) 0%, 
+    transparent 70%);
+  opacity: 0;
+  transition: var(--eluxe-transition);
+  z-index: 1;
+}
+
+.eluxe-mission-card:hover .eluxe-icon-halo {
+  opacity: 1;
+}
+
+.eluxe-mission-content h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--eluxe-light);
+  background: linear-gradient(90deg, #fff, var(--eluxe-primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.eluxe-mission-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--eluxe-gray);
+  margin-bottom: 3rem;
+}
+
+.eluxe-mission-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.eluxe-mission-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.2) 30%, 
+    transparent 100%);
+  margin-bottom: 2rem;
+}
+
+.eluxe-mission-learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--eluxe-gold);
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: var(--eluxe-transition);
+}
+
+.eluxe-mission-learn-more svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.eluxe-mission-learn-more:hover {
+  color: var(--eluxe-light);
+}
+
+.eluxe-mission-learn-more:hover svg {
+  transform: translateX(5px);
+}
+
+/* HOBBIES SECTION - LUXURY ENHANCEMENTS */
+.eluxe-hobbies {
+  position: relative;
+  padding: 18rem 0;
+  background-color: var(--eluxe-dark-light);
+  overflow: hidden;
+}
+
+.eluxe-fluid-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.eluxe-gold-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.eluxe-gold-particles::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: var(--eluxe-gold);
+  box-shadow: 
+    20vw 10vh 2px var(--eluxe-gold),
+    80vw 20vh 2px var(--eluxe-gold),
+    40vw 60vh 2px var(--eluxe-gold),
+    60vw 80vh 2px var(--eluxe-gold),
+    10vw 50vh 2px var(--eluxe-gold);
+  animation: goldParticleFlow 25s linear infinite;
+}
+
+.eluxe-silk-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    url('https://www.transparenttextures.com/patterns/silk.png') center/cover,
+    linear-gradient(135deg, 
+      rgba(20, 20, 31, 0.9) 0%, 
+      rgba(20, 20, 31, 0.6) 100%);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.eluxe-hobbies-carousel {
+  display: flex;
+  gap: 4rem;
+  margin-top: 10rem;
+  padding: 3rem 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.eluxe-hobbies-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.eluxe-hobby {
+  position: relative;
+  flex: 0 0 70%;
+  scroll-snap-align: start;
+  background: rgba(10, 10, 15, 0.5);
+  border-radius: 2.5rem;
+  overflow: hidden;
+  transition: var(--eluxe-transition);
+  z-index: 1;
+}
+
+.eluxe-hobby-embossed-number {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.03);
+  font-family: 'Playfair Display', serif;
+  z-index: 2;
+}
+
+.eluxe-hobby-media {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.eluxe-hobby-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.eluxe-hobby:hover .eluxe-hobby-image {
+  transform: scale(1.15);
+}
+
+.eluxe-hobby-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, 
+    rgba(10, 10, 15, 0.95) 0%, 
+    transparent 60%);
+  z-index: 1;
+}
+
+.eluxe-hobby-reflection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.05) 0%, 
+    transparent 50%, 
+    rgba(255, 255, 255, 0.05) 100%);
+  z-index: 2;
+}
+
+.eluxe-hobby-content {
+  position: relative;
+  padding: 4rem;
+  z-index: 3;
+}
+
+.eluxe-hobby-icon-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 2.5rem;
+}
+
+.eluxe-hobby-icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: var(--eluxe-primary);
+  transition: var(--eluxe-transition);
+  z-index: 2;
+}
+
+.eluxe-hobby-icon-shadow {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, 
+    rgba(107, 197, 248, 0.3) 0%, 
+    transparent 70%);
+  opacity: 0;
+  transition: var(--eluxe-transition);
+  z-index: 1;
+}
+
+.eluxe-hobby:hover .eluxe-hobby-icon-shadow {
+  opacity: 1;
+}
+
+.eluxe-hobby h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--eluxe-light);
+  background: linear-gradient(90deg, #fff, var(--eluxe-primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.eluxe-hobby p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--eluxe-gray);
+  margin-bottom: 3rem;
+}
+
+.eluxe-hobby-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--eluxe-gold);
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: var(--eluxe-transition);
+}
+
+.eluxe-hobby-cta svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.eluxe-hobby-cta:hover {
+  color: var(--eluxe-light);
+}
+
+.eluxe-hobby-cta:hover svg {
+  transform: translateX(5px);
+}
+
+.eluxe-hobby-gold-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 2.5rem;
+  background: linear-gradient(135deg, 
+    rgba(212, 175, 55, 0.3) 0%, 
+    rgba(212, 175, 55, 0.1) 50%, 
+    rgba(212, 175, 55, 0.3) 100%) border-box;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  transition: var(--eluxe-transition);
+}
+
+.eluxe-hobby:hover .eluxe-hobby-gold-border {
+  opacity: 1;
+}
+
+/* TESTIMONIALS SECTION - LUXURY ENHANCEMENTS */
+.eluxe-testimonials {
+  position: relative;
+  padding: 18rem 0;
+  background-color: var(--eluxe-dark);
+  overflow: hidden;
+}
+
+.eluxe-holographic-mesh {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(45deg, var(--eluxe-dark) 0%, transparent 100%),
+    conic-gradient(
+      from 45deg at 25% 25%,
+      var(--eluxe-primary) 0deg,
+      var(--eluxe-secondary) 90deg,
+      var(--eluxe-primary) 180deg,
+      var(--eluxe-secondary) 270deg,
+      var(--eluxe-primary) 360deg
+    );
+  background-blend-mode: overlay;
+  opacity: 0.1;
+  z-index: -1;
+  animation: holographicPulse 20s ease infinite;
+}
+
+.eluxe-micro-diamonds {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.eluxe-micro-diamonds::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--eluxe-diamond);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  box-shadow: 
+    20vw 10vh 4px var(--eluxe-diamond),
+    80vw 20vh 4px var(--eluxe-diamond),
+    40vw 60vh 4px var(--eluxe-diamond),
+    60vw 80vh 4px var(--eluxe-diamond),
+    10vw 50vh 4px var(--eluxe-diamond);
+  animation: float 15s ease-in-out infinite;
+}
+
+.eluxe-crystal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    url('https://www.transparenttextures.com/patterns/crystal.png') center/cover,
+    linear-gradient(135deg, 
+      rgba(10, 10, 15, 0.9) 0%, 
+      rgba(10, 10, 15, 0.6) 100%);
+  opacity: 0.05;
+  z-index: -1;
+}
+
+.eluxe-testimonial-slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 5rem;
+  margin-top: 10rem;
+}
+
+.eluxe-testimonial {
+  position: relative;
+  padding: 5rem 4rem;
+  background: rgba(10, 10, 15, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 2rem;
+  backdrop-filter: blur(20px);
+  transition: var(--eluxe-transition);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.eluxe-testimonial::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.02) 0%, 
+    transparent 50%, 
+    rgba(255, 255, 255, 0.02) 100%);
+  z-index: -1;
+}
+
+.eluxe-testimonial-jewel {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, 
+    var(--eluxe-primary) 0%, 
+    var(--eluxe-secondary) 100%);
+  border-radius: 50%;
+  filter: blur(15px);
+  opacity: 0.1;
+  z-index: -1;
+  transition: var(--eluxe-transition);
+}
+
+.eluxe-testimonial-jewel-1 {
+  top: -30px;
+  left: -30px;
+}
+
+.eluxe-testimonial-jewel-2 {
+  bottom: -30px;
+  right: -30px;
+}
+
+.eluxe-testimonial:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6), 
+    var(--eluxe-glow);
+}
+
+.eluxe-testimonial:hover .eluxe-testimonial-jewel {
+  opacity: 0.2;
+  filter: blur(20px);
+}
+
+.eluxe-testimonial-quote {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  width: 70px;
+  height: 70px;
+  color: var(--eluxe-primary);
+  opacity: 0.1;
+  transition: var(--eluxe-transition);
+}
+
+.eluxe-testimonial:hover .eluxe-testimonial-quote {
+  opacity: 0.2;
+}
+
+.eluxe-testimonial-content p {
+  font-size: 1.4rem;
+  line-height: 1.9;
+  color: var(--eluxe-gray);
+  font-style: italic;
+  margin-bottom: 4rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.eluxe-testimonial-content p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, 
+    var(--eluxe-primary), 
+    var(--eluxe-secondary));
+}
+
+.eluxe-testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.eluxe-author-image {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.eluxe-author-image-border {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  border-radius: 50%;
+  background: linear-gradient(135deg, 
+    var(--eluxe-primary), 
+    var(--eluxe-secondary));
+  z-index: -1;
+}
+
+.eluxe-author-info {
+  flex: 1;
+}
+
+.eluxe-author-info h4 {
+  font-size: 1.4rem;
+  color: var(--eluxe-light);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.eluxe-author-info p {
+  font-size: 1rem;
+  color: var(--eluxe-gray);
+  margin: 0;
+  font-style: normal;
+  padding: 0;
+}
+
+.eluxe-author-info p::before {
+  display: none;
+}
+
+.eluxe-author-company-logo {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  width: 100px;
+  height: 30px;
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  transition: var(--eluxe-transition);
+}
+
+.eluxe-testimonial:hover .eluxe-author-company-logo {
+  opacity: 0.3;
+}
+
+.eluxe-testimonial-decoration {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, 
+    rgba(107, 197, 248, 0.1) 0%, 
+    transparent 70%);
+  z-index: -1;
+  transition: var(--eluxe-transition);
+}
+
+.eluxe-testimonial:hover .eluxe-testimonial-decoration {
+  transform: scale(1.2);
+}
+
+.eluxe-testimonial-signature {
+  position: absolute;
+  bottom: 3rem;
+  left: 4rem;
+  width: 120px;
+  height: 50px;
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  transition: var(--eluxe-transition);
+}
+
+.eluxe-testimonial:hover .eluxe-testimonial-signature {
+  opacity: 0.3;
+}
+
+/* LUXURY TYPOGRAPHY & HEADERS */
+.eluxe-header {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.eluxe-title-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.eluxe-title {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2rem;
+  color: transparent;
+  background: linear-gradient(90deg, var(--eluxe-primary), var(--eluxe-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -1px;
+}
+
+.eluxe-title-line {
+  display: block;
+  overflow: hidden;
+}
+
+.eluxe-title-inner {
+  display: inline-block;
+}
+
+.eluxe-title-ornament {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 5px;
+}
+
+.eluxe-title-ornament svg {
+  width: 100%;
+  height: 100%;
+}
+
+.eluxe-subtitle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--eluxe-gray);
+  font-weight: 300;
+}
+
+.eluxe-subtitle-line {
+  display: inline-block;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.is-inview .eluxe-subtitle-line {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.eluxe-subtitle-line:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.eluxe-subtitle-line:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 1200px) {
+  .eluxe-title {
+    font-size: 5rem;
   }
   
-  .mission-title {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 40px;
-  }
-  
-  .mission-content p {
-    color: #f3f4f6;
-    font-size: 0.875rem;
-    text-align: justify;
-    line-height: 1.5;
-  }
-  
-  /* Hobbies Section */
-  .hobbies-section {
-    max-width: 1200px;
-    width: 90%;
-    margin: 40px auto;
-    padding: 40px 24px;
-    background: rgba(30, 30, 45, 0.9);
-    border: 1px solid rgba(30, 64, 175, 0.4);
-    border-radius: 10px;
-  }
-  
-  .hobbies-title {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 40px;
-  }
-  
-  .hobbies-content p {
-    color: #f3f4f6;
-    font-size: 0.875rem;
-    text-align: justify;
-    line-height: 1.5;
-  }
-  
-  /* Testimonials Section */
-  .testimonials-section {
-    max-width: 1200px;
-    width: 90%;
-    margin: 40px auto;
-    padding: 40px 24px;
-    background: rgba(34, 34, 43, 0.9);
-    border: 1px solid rgba(30, 64, 175, 0.4);
-    border-radius: 10px;
-  }
-  
-  .testimonials-title {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 40px;
-  }
-  
-  .testimonials-grid {
-    display: grid;
+  .eluxe-mission-grid,
+  .eluxe-testimonial-slider {
     grid-template-columns: 1fr;
-    gap: 24px;
   }
   
-  @media (min-width: 768px) {
-    .testimonials-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-    }
+  .eluxe-hobby {
+    flex: 0 0 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .eluxe-mission,
+  .eluxe-hobbies,
+  .eluxe-testimonial {
+    padding: 12rem 0;
   }
   
-  .testimonial {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 24px;
-    border-radius: 8px;
-    color: #f3f4f6;
-    font-size: 0.875rem;
+  .eluxe-title {
+    font-size: 3.5rem;
   }
   
-  .testimonial span {
-    display: block;
-    margin-top: 12px;
-    font-size: 0.75rem;
-    color: #d1d5db;
+  .eluxe-mission-card,
+  .eluxe-testimonial {
+    padding: 4rem 3rem;
   }
   
+  .eluxe-mission-grid,
+  .eluxe-testimonial-slider {
+    gap: 3rem;
+  }
+  
+  .eluxe-hobby {
+    flex: 0 0 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .eluxe-title {
+    font-size: 2.8rem;
+  }
+  
+  .eluxe-subtitle {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+  }
+  
+  .eluxe-mission-card,
+  .eluxe-testimonial {
+    padding: 3rem 2rem;
+  }
+}
