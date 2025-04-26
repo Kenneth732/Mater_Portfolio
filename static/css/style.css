@@ -67,6 +67,7 @@ body {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.4s ease;
+  /* margin-bottom: 50px; */
 }
 
 .elite-nav {
@@ -674,6 +675,27 @@ body {
 
 .luxury-hero.active .luxury-title-decoration {
   transform: scaleX(1);
+}
+
+@media (max-width: 650px) {
+  .luxury-hero {
+    padding: 0;
+  }
+
+  .luxury-container {
+    max-width: 2500px;
+    width: 96%;
+    /* background-color: red; */
+  }
+  .luxury-image-wrapper {
+    width: auto;
+    border-radius: 0%;
+
+  }
+  .luxury-image-wrapper img {
+    width: 95%;
+    border-radius: 5%;
+  }
 }
 
 
@@ -2245,6 +2267,7 @@ body {
   z-index: 10;
 }
 
+
 /* Diamond Contact Header */
 .diamond-contact-header {
   position: relative;
@@ -2326,12 +2349,32 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(20, 25, 40, 0.6);
+  /* background: rgba(20, 25, 40, 0.6); */
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 20px;
   border: 1px solid rgba(107, 197, 248, 0.2);
   z-index: 1;
+}
+
+@media (max-width: 650px) {
+  .quantum-container {
+    max-width: 2000px;
+    width: 100%;
+    /* background-color: red; */
+  }
+  .qtf-hologram {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    /* background: rgba(20, 25, 40, 0.6); */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(107, 197, 248, 0.2);
+    z-index: 1;
+  }
+  
 }
 
 .qt-form {
@@ -2458,6 +2501,13 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(161, 98, 232, 0.2);
   z-index: 1;
+}
+
+@media (max-width: 650px) {
+  .qah-hologram {
+    max-width: 2000px;
+    width: 90%;
+  }
 }
 
 .qah-content {
@@ -2624,6 +2674,14 @@ body {
   
   .quantum-transmission-form, .quantum-access-hub {
     padding: 2rem;
+  }
+}
+
+@media (max-width: 600px){
+  .quantum-container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0;
   }
 }
 

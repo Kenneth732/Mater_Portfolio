@@ -8,7 +8,6 @@ toggle.addEventListener('click', () => {
 
 
 
-
 // Ultra-Premium Luxury About Section Animation
 document.addEventListener('DOMContentLoaded', function() {
   const aboutSection = document.querySelector('.elite-about-section');
